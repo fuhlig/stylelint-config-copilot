@@ -1,0 +1,1 @@
+Opinionated stylelint configuration
