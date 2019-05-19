@@ -1,3 +1,8 @@
 node_modules/
 .idea
 .history
+
+# for local testing purposes
+.stylelintrc.js
+
+test/find-rules.log.json

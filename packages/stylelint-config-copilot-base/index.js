@@ -776,6 +776,9 @@ module.exports = {
             #COMMENTS
     \*------------------------------------ */
     // Require or disallow an empty line before comments (Autofixable).
+    'comment-empty-line-before': null,
+
+    // Require or disallow an empty line before comments (Autofixable).
     'comment-no-empty': true,
 
     // Require or disallow whitespace on the inside of comment markers (Autofixable).
