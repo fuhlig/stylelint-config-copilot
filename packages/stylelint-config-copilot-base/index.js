@@ -72,7 +72,7 @@ module.exports = {
     'color-no-hex': null,
 
     // Specify lowercase or uppercase for hex colors.
-    'color-hex-case': 'lower',
+    'color-hex-case': 'upper',
 
     // Specify short or long notation for hex colors.
     // Hex colours must always use shorthand where possible.
