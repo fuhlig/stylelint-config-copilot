@@ -5,25 +5,26 @@
 module.exports = {
   'rules': {
     /* ------------------------------------*\
-        #SCSS-RULES
+      #SCSS-RULES
     \*------------------------------------ */
 
     /* ------------------------------------*\
-        #AT-IF
+      #AT-IF
     \*------------------------------------ */
+
     // Require or disallow a newline after the closing brace of @if statements.
     // 'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
 
     // Require a single space or disallow whitespace after the closing brace of @if statements.
     'scss/at-if-closing-brace-space-after': 'always-intermediate',
 
-    // @TODO
     // Require or disallow a newline after the closing brace of @if statements.
     'scss/at-if-closing-brace-newline-after': null,
 
     /* ------------------------------------*\
-        #AT-ELSE
+      #AT-ELSE
     \*------------------------------------ */
+
     // Require or disallow a newline after the closing brace of @else statements.
     'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
 
@@ -33,13 +34,13 @@ module.exports = {
     // Require an empty line or disallow empty lines before @-else.
     'scss/at-else-empty-line-before': 'never',
 
-    // @TODO
     // Require or disallow a space before @else if parentheses.
-    'scss/at-else-if-parentheses-space-before': null,
+    'scss/at-else-if-parentheses-space-before': 'always',
 
     /* ------------------------------------*\
-        #AT-EXTEND
+      #AT-EXTEND
     \*------------------------------------ */
+
     // Disallow at-extends (@extend) with missing placeholders.
     'scss/at-extend-no-missing-placeholder': [
       true,
@@ -50,56 +51,56 @@ module.exports = {
     ],
 
     /* ------------------------------------*\
-        #AT-FUNCTION
-        @TODO
+      #AT-FUNCTION
     \*------------------------------------ */
 
     // Require named parameters in SCSS function call rule.
     'scss/at-function-named-arguments': null,
+
     // Require or disallow a space before @function parentheses (Autofixable).
-    'scss/at-function-parentheses-space-before': null,
+    'scss/at-function-parentheses-space-before': 'never',
+
     // Specify a pattern for Sass/SCSS-like function names.
     'scss/at-function-pattern': null,
 
     /* ------------------------------------*\
-        #AT-IMPORT
+      #AT-IMPORT
     \*------------------------------------ */
 
-    // @TODO
     // Disallow leading underscore in partial names in @import.
     'scss/at-import-no-partial-leading-underscore': null,
 
-    // @TODO
     // Specify blacklist of disallowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-blacklist': null,
 
-    // @TODO
     // Specify whitelist of allowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-whitelist': null,
 
     /* ------------------------------------*\
-        #AT-MIXINS
+      #AT-MIXINS
     \*------------------------------------ */
 
-    // @TODO
     // Require or disallow parentheses in argumentless @mixin calls (Autofixable).
-    'scss/at-mixin-argumentless-call-parentheses': null,
+    'scss/at-mixin-argumentless-call-parentheses': 'always',
 
-    // @TODO
     // Require named parameters in at-mixin call rule.
-    'scss/at-mixin-named-arguments': null,
+    'scss/at-mixin-named-arguments': [
+      'always',
+      { 'ignore':
+        ['single-argument']
+      }
+    ],
 
-    // @TODO
     // Require or disallow a space before @mixin parentheses (Autofixable).
-    'scss/at-mixin-parentheses-space-before': null,
+    'scss/at-mixin-parentheses-space-before': 'never',
 
-    // @TODO
     // Specify a pattern for Sass/SCSS-like mixin names.
     'scss/at-mixin-pattern': null,
 
     /* ------------------------------------*\
-        #AT-RULE
+      #AT-RULE
     \*------------------------------------ */
+
     // Disallow unknown at-rules. Should be used instead of stylelint's at-rule-no-unknown.
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
@@ -109,14 +110,14 @@ module.exports = {
     ],
 
     /* ------------------------------------*\
-        #VARIABLES
+      #VARIABLES
     \*------------------------------------ */
+
     // Require a newline after the colon in $-variable declarations.
-    // TODO: deactivated due to variable alignment
-    // 'scss/dollar-variable-colon-newline-after': null,
+    'scss/dollar-variable-colon-newline-after': null,
 
     // Require a single space or disallow whitespace after the colon in $-variable declarations.
-    // 'scss/dollar-variable-colon-space-after': 'always',
+    'scss/dollar-variable-colon-space-after': 'at-least-one-space',
 
     // Require !default flag for $-variable declarations
     'scss/dollar-variable-default': [
@@ -141,7 +142,6 @@ module.exports = {
       }
     ],
 
-    // @TODO
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
     'scss/dollar-variable-no-missing-interpolation': true,
 
@@ -149,14 +149,16 @@ module.exports = {
     'scss/dollar-variable-pattern': null,
 
     /* ------------------------------------*\
-        #PLACEHOLDER
+      #PLACEHOLDER
     \*------------------------------------ */
+
     // Specify a pattern for %-placeholders.
     'scss/percent-placeholder-pattern': null,
 
     /* ------------------------------------*\
-        #COMMENT
+      #COMMENT
     \*------------------------------------ */
+
     // Require or disallow an empty line before //-comments.
     'scss/double-slash-comment-empty-line-before': null,
 
@@ -167,8 +169,9 @@ module.exports = {
     'scss/double-slash-comment-whitespace-inside': null,
 
     /* ------------------------------------*\
-        #DECLARATION
+      #DECLARATION
     \*------------------------------------ */
+
     // Require or disallow properties with - in their names to be in a form of a nested group.
     'scss/declaration-nested-properties': null,
 
@@ -176,34 +179,36 @@ module.exports = {
     'scss/declaration-nested-properties-no-divided-groups': true,
 
     /* ------------------------------------*\
-        #MEDIA-FEATURE
+      #MEDIA-FEATURE
     \*------------------------------------ */
+
     // Require a media feature value be a $-variable or disallow $-variables in media feature values.
     'scss/media-feature-value-dollar-variable': 'always',
 
     /* ------------------------------------*\
-        #OPERATOR
+      #OPERATOR
     \*------------------------------------ */
-    // @TODO
 
     // Disallow linebreaks after Sass operators.
-    'scss/operator-no-newline-after': null,
+    'scss/operator-no-newline-after': true,
 
     // Disallow linebreaks before Sass operators.
-    'scss/operator-no-newline-before': null,
+    'scss/operator-no-newline-before': true,
 
     // Disallow unspaced operators in Sass operations.
-    'scss/operator-no-unspaced': null,
+    'scss/operator-no-unspaced': true,
 
     /* ------------------------------------*\
-        #PARTIAL
+      #PARTIAL
     \*------------------------------------ */
+
     // Disallow non-CSS @imports in partial files.
     'scss/partial-no-import': null,
 
     /* ------------------------------------*\
-    #SELECTOR
+      #SELECTOR
     \*------------------------------------ */
+
     // Require or disallow nesting of combinators in selectors.
     'scss/selector-nest-combinators': null,
 
@@ -211,8 +216,9 @@ module.exports = {
     'scss/selector-no-redundant-nesting-selector': true,
 
     /* ------------------------------------*\
-        #GENERAL
+      #GENERAL
     \*------------------------------------ */
+
     // Disallow dollar variables within a stylesheet.
     'scss/no-dollar-variables': null,
 
