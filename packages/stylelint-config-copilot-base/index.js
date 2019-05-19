@@ -45,7 +45,6 @@ module.exports = {
     // Disallow empty sources.
     'no-empty-source': true,
 
-    // @TODO
     'no-empty-first-line': null,
 
     // Disallow extra semicolons.
@@ -67,7 +66,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #COLOR
-        \*------------------------------------ */
+    \*------------------------------------ */
 
     // Disallow hex colors.
     'color-no-hex': null,
@@ -100,7 +99,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #FONT-FAMILY
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Specify whether or not quotation marks should be used around font family names.
     // "always-where-required"|"always-where-recommended"|"always-unless-keyword"
     'font-family-name-quotes': 'always-unless-keyword',
@@ -117,15 +116,15 @@ module.exports = {
 
     /* ------------------------------------*\
             #FUNCTION
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Specify a blacklist of disallowed functions.
     'function-blacklist': null,
 
     // Disallow an unspaced operator within calc functions.
     'function-calc-no-unspaced-operator': true,
 
-    // @TODO
-    'function-calc-no-invalid': null,
+    // Disallow an invalid expression within calc functions.
+    'function-calc-no-invalid': true,
 
     // Require a newline or disallow whitespace after the commas of functions.
     // There must always be a newline after the commas in multi-line functions.
@@ -192,7 +191,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #NUMBER
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require or disallow a leading zero for fractional numbers less than 1.
     // There must always be a leading zero.
     'number-leading-zero': 'always',
@@ -212,7 +211,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #STRING
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Disallow (unescaped) newlines in strings.
     'string-no-newline': true,
 
@@ -222,13 +221,13 @@ module.exports = {
 
     /* ------------------------------------*\
             #TIME
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Disallow animation and transition times under 100ms.
     // "time-no-imperceptible": true,
 
     /* ------------------------------------*\
             #UNIT
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Specify a blacklist of disallowed units.
     'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
 
@@ -251,7 +250,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #VALUE
-        \*------------------------------------ */
+    \*------------------------------------ */
     // # Value
     // Disallow vendor prefixes for values.
     'value-no-vendor-prefix': true,
@@ -286,14 +285,14 @@ module.exports = {
 
     /* ------------------------------------*\
             #SHORTHAND
-        \*------------------------------------ */
+    \*------------------------------------ */
     // # Shorthand property
     // Disallow redundant values in shorthand properties.
     'shorthand-property-no-redundant-values': true,
 
     /* ------------------------------------*\
             #PROPERTY
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Specify lowercase or uppercase for properties.
     'property-case': [
       'lower',
@@ -321,7 +320,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #DECLARATION
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require a single space or disallow whitespace after the bang of declarations.
     // There must never be whitespace after the bang.
     'declaration-bang-space-after': 'never',
@@ -362,7 +361,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #DECLARATION-BLOCK
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Disallow duplicate properties within declaration blocks.
     'declaration-block-no-duplicate-properties': [
       true,
@@ -403,7 +402,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #BLOCK
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require or disallow an empty line before the closing brace of blocks.
     'block-closing-brace-empty-line-before': null,
 
@@ -463,7 +462,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #SELECTOR
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
     'selector-attribute-brackets-space-inside': 'never',
 
@@ -571,24 +570,48 @@ module.exports = {
     // Disallow unknown type selectors.
     'selector-type-no-unknown': true,
 
-    // @TODO
+    // Specify a blacklist of disallowed attribute operators.
     'selector-attribute-operator-blacklist': null,
+
+    // Specify a whitelist of allowed attribute operators.
     'selector-attribute-operator-whitelist': null,
+
+    // Specify a pattern for class selectors.
     'selector-class-pattern': null,
+
+    // Specify a blacklist of disallowed combinators.
     'selector-combinator-blacklist': null,
+
+    // Specify a whitelist of allowed combinators.
     'selector-combinator-whitelist': null,
+
+    // Specify a pattern for ID selectors.
     'selector-id-pattern': null,
+
+    // Limit the number of pseudo-classes in a selector.
     'selector-max-pseudo-class': null,
-    'selector-max-universal': null,
+
+    // Limit the number of universal selectors in a selector.
+    'selector-max-universal': 1,
+
+    // Specify a pattern for the selectors of rules nested within rules.
     'selector-nested-pattern': null,
+
+    // Specify a blacklist of disallowed pseudo-class selectors.
     'selector-pseudo-class-blacklist': null,
+
+    // Specify a whitelist of allowed pseudo-class selectors.
     'selector-pseudo-class-whitelist': null,
+
+    // Specify a blacklist of disallowed pseudo-element selectors.
     'selector-pseudo-element-blacklist': null,
+
+    // Specify a whitelist of allowed pseudo-element selectors.
     'selector-pseudo-element-whitelist': null,
 
     /* ------------------------------------*\
             #SELECTOR-LIST
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require a newline or disallow whitespace after the commas of selector lists.
     // There must always be a newline after the commas in multi-line selector lists.
     'selector-list-comma-newline-after': 'always-multi-line',
@@ -607,7 +630,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #RULE
-        \*------------------------------------ */
+    \*------------------------------------ */
     'rule-empty-line-before': [
       'always-multi-line',
       {
@@ -623,7 +646,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #MEDIA-FEATURE
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require a single space or disallow whitespace after the colon in media features.
     // There must always be a single space after the colon.
     'media-feature-colon-space-after': 'always',
@@ -641,17 +664,27 @@ module.exports = {
     // Disallow vendor prefixes for media feature names.
     'media-feature-name-no-vendor-prefix': null,
 
-    // @TODO
+    // Specify a blacklist of disallowed media feature names.
     'media-feature-name-blacklist': null,
-    'media-feature-name-no-unknown': null,
+
+    // Specify a whitelist of allowed media feature name and value pairs.
     'media-feature-name-value-whitelist': null,
+
+    // Specify a whitelist of allowed media feature names.
     'media-feature-name-whitelist': null,
-    'media-feature-range-operator-space-after': null,
-    'media-feature-range-operator-space-before': null,
+
+    // Disallow unknown media feature names.
+    'media-feature-name-no-unknown': true,
+
+    // Require a single space or disallow whitespace after the range operator in media features (Autofixable).
+    'media-feature-range-operator-space-after': 'always',
+
+    // Require a single space or disallow whitespace before the range operator in media features (Autofixable).
+    'media-feature-range-operator-space-before': 'always',
 
     /* ------------------------------------*\
             #MEDIA-QUERY-LIST
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require a newline or disallow whitespace after the commas of media query lists.
     // There must always be a newline after the commas in multi-line media query lists.
     'media-query-list-comma-newline-after': 'never-multi-line',
@@ -670,7 +703,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #AT-RULE
-        \*------------------------------------ */
+    \*------------------------------------ */
     // Require or disallow an empty line before @rules.
     // There must always be an empty line before @rules.
     // "at-rule-empty-line-before": [
@@ -690,20 +723,26 @@ module.exports = {
     //     }
     // ],
 
-    // @TODO
+    // Specify a blacklist of disallowed at-rules.
     'at-rule-blacklist': null,
-    'at-rule-empty-line-before': null,
-    'at-rule-whitelist': null,
+
+    // Disallow vendor prefixes for at-rules.
+    'at-rule-no-vendor-prefix': true,
+
+    // Specify a requirelist of properties for an at-rule.
     'at-rule-property-requirelist': null,
+
+    // Specify a whitelist of allowed at-rules.
+    'at-rule-whitelist': null,
+
+    // Require or disallow an empty line before at-rules (Autofixable).
+    'at-rule-empty-line-before': 'always',
 
     // Specify lowercase or uppercase for at-rules names.
     'at-rule-name-case': 'lower',
 
     // Disallow unknown at-rules.
     'at-rule-no-unknown': true,
-
-    // Disallow vendor prefixes for @rules.
-    'at-rule-no-vendor-prefix': null,
 
     // Require a newline after at-rule names.
     'at-rule-name-newline-after': 'always-multi-line',
@@ -719,7 +758,7 @@ module.exports = {
 
     /* ------------------------------------*\
             #ANIMATIONS / KEYFRAMES
-        \*------------------------------------ */
+    \*------------------------------------ */
 
     // Disallow unknown animations.
     'no-unknown-animations': true,
@@ -727,17 +766,22 @@ module.exports = {
     // Disallow !important within keyframe declarations.
     'keyframe-declaration-no-important': true,
 
-    // @TODO
+    // Specify a pattern for keyframe names.
     'keyframes-name-pattern': null,
+
+    // Specify the minimum number of milliseconds for time values.
     'time-min-milliseconds': null,
 
     /* ------------------------------------*\
             #COMMENTS
-        \*------------------------------------ */
-    // @TODO
-    'comment-empty-line-before': null,
-    'comment-no-empty': null,
-    'comment-whitespace-inside': null,
+    \*------------------------------------ */
+    // Require or disallow an empty line before comments (Autofixable).
+    'comment-no-empty': true,
+
+    // Require or disallow whitespace on the inside of comment markers (Autofixable).
+    'comment-whitespace-inside': 'always',
+
+    // Specify a blacklist of disallowed words within comments.
     'comment-word-blacklist': null,
 
     // Disallow double-slash comments (//...) which are not supported by CSS and could lead to unexpected results.
@@ -745,10 +789,15 @@ module.exports = {
 
     /* ------------------------------------*\
             #CUSTOM
-        \*------------------------------------ */
-    // @TODO
+    \*------------------------------------ */
+
+    // Specify a pattern for custom media query names.
     'custom-media-pattern': null,
+
+    // Require or disallow an empty line before custom properties (Autofixable).
     'custom-property-empty-line-before': null,
+
+    // Specify a pattern for custom properties.
     'custom-property-pattern': null
   }
 };
