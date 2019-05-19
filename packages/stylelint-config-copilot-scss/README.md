@@ -20,6 +20,8 @@ Add this to your [Stylelint config](https://stylelint.io/user-guide/configuratio
 }
 ```
 
+_Example: Rename [`.stylelintrc.example.js`](.stylelintrc.example.js) to `.stylelintrc.js`_
+
 
 ## Related
 
