@@ -19,6 +19,7 @@ module.exports = {
     'quotes': ['error', 'single', {
       'avoidEscape': true,
       'allowTemplateLiterals': true
-    }]
+    }],
+    'space-before-function-paren': ['warn', 'never']
   }
 };
