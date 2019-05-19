@@ -7,7 +7,9 @@
     "stylelint"
   ],
   "scripts": {
-    "lerna": "lerna clean -y && lerna bootstrap --hoist",
+    "preinstall": "npx lerna clean -y",
+    "postinstall": "npm run lerna:setup",
+    "lerna:setup": "npx lerna bootstrap --hoist",
     "test": "npm run test:find-rules && npm run lint:eslint",
     "test:find-rules": "node test/find-rules",
     "lint:eslint": "eslint --format=pretty ."
