@@ -1,0 +1,20 @@
+{
+  "name": "stylelint-config-copilot-base",
+  "version": "0.0.1",
+  "description": "Opinionated Stylelint-Configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stylelint",
+    "linter",
+    "code-analysis",
+    "code-quality"
+  ],
+  "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "10.0.1"
+  }
+}
