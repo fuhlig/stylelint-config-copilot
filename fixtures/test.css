@@ -1,6 +1,3 @@
-@import "a";
-@import "b";
-
 /* indentation */
 a {
   padding: var(--spacing);
@@ -55,6 +52,7 @@ div {
   float: left;
   vertical-align: middle;
 }
+<<<<<<< HEAD
 
 /* declaration-colon-newline-after */
 @font-face {
@@ -64,3 +62,5 @@ div {
   font-weight: normal;
   font-style: normal;
 }
+=======
+>>>>>>> [TEST] Add fixture files

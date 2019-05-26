@@ -1,0 +1,65 @@
+$font:       "Roboto";
+$font-stack: $font;
+$spacing:    auto;
+$animiation: "myAnimation";
+
+@keyframes $animiation {
+  //
+}
+
+// sass comment
+.test {
+  font-family: $font-stack;
+  top: $spacing*2;
+  padding: auto;
+  margin: {
+    left: "auto";
+    right: auto;
+  }
+  margin: {
+    top: auto;
+    bottom: auto;
+  }
+}
+
+@media (min-width: 300px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+* {
+  * {
+    color: #000;
+  }
+}
+
+.parent {
+  @media (min-width: 300px) {
+    .child {
+      background-color: #fff;
+    }
+  }
+}
+
+@include mymixin(foo);
+
+@if($condition) {
+  content: true;
+} @else ($condition) {
+  content: false;
+}
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+@each $key in map-keys($font-weights) {
+  $value: map-get($font-weights, $key);
+}
+
+a {
+  font-family: quote("Helvetica");
+}
