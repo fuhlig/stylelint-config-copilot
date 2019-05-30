@@ -16,6 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "stylelint": "10.0.1",
-    "stylelint-scss": "3.6.1"
+    "stylelint-scss": "3.7.0"
   }
 }
