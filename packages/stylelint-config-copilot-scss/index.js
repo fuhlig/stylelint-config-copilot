@@ -3,6 +3,9 @@
  * @requires stylelint-scss
  */
 module.exports = {
+  'plugins': [
+    'stylelint-scss',
+  ],
   'rules': {
     /* ------------------------------------*\
       #SCSS-RULES
@@ -46,8 +49,8 @@ module.exports = {
       true,
       {
         // default message incl. custom hint & reference
-        'message': 'Expected a placeholder selector (e.g. %placeholder) to be used in @extend  [ avoid using @extend (https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/   http://8gramgorilla.com/mastering-sass-extends-and-placeholders/) ]'
-      }
+        'message': 'Expected a placeholder selector (e.g. %placeholder) to be used in @extend  [ avoid using @extend (https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/   http://8gramgorilla.com/mastering-sass-extends-and-placeholders/) ]',
+      },
     ],
 
     /* ------------------------------------*\
@@ -90,8 +93,10 @@ module.exports = {
     'scss/at-mixin-named-arguments': [
       'always',
       { 'ignore':
-        ['single-argument']
-      }
+        [
+          'single-argument',
+        ],
+      },
     ],
 
     // Require or disallow a space before @mixin parentheses (Autofixable).
@@ -109,7 +114,7 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
 
     'at-rule-blacklist': [
-      'debug'
+      'debug',
     ],
 
     /* ------------------------------------*\
@@ -135,8 +140,8 @@ module.exports = {
     'scss/dollar-variable-default': [
       true,
       {
-        'ignore': 'local'
-      }
+        'ignore': 'local',
+      },
     ],
 
     // Require a single space or disallow whitespace before the colon in $-variable declarations.
@@ -149,9 +154,9 @@ module.exports = {
         'except': [
           'first-nested',
           'after-comment',
-          'after-dollar-variable'
-        ]
-      }
+          'after-dollar-variable',
+        ],
+      },
     ],
 
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
@@ -235,6 +240,6 @@ module.exports = {
     'scss/no-dollar-variables': null,
 
     // Disallow duplicate dollar variables within a stylesheet.
-    'scss/no-duplicate-dollar-variables': true
-  }
+    'scss/no-duplicate-dollar-variables': true,
+  },
 };

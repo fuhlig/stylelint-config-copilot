@@ -11,15 +11,15 @@ const fs = require('fs');
 
 const paths = {
   input: './packages/stylelint-config-copilot-base/index.js',
-  output: './test/find-rules.log.json'
+  output: './test/find-rules.log.json',
 };
 
 function print(rules) {
   console.table([
-    { type: 'used', number: rules.used.length },
-    { type: 'unused', number: rules.unused.length },
-    { type: 'deprecated', number: rules.deprecated.length },
-    { type: 'invalid', number: rules.invalid.length }
+    { type: 'used', number: rules.used.length, },
+    { type: 'unused', number: rules.unused.length, },
+    { type: 'deprecated', number: rules.deprecated.length, },
+    { type: 'invalid', number: rules.invalid.length, },
   ]);
 }
 
@@ -29,7 +29,7 @@ function save(rules) {
   fs.writeFileSync(paths.output, JSON.stringify({
     unused: rules.unused,
     deprecated: rules.deprecated,
-    invalid: rules.invalid
+    invalid: rules.invalid,
   }, null, 2));
 }
 
