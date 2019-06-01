@@ -5,7 +5,8 @@
 module.exports = {
   'plugins': [
     'stylelint-declaration-block-no-ignored-properties',
-    'stylelint-high-performance-animation'
+    'stylelint-high-performance-animation',
+    'stylelint-declaration-use-variable'
   ],
   'rules': {
     'plugin/declaration-block-no-ignored-properties': true,
@@ -18,23 +19,48 @@ module.exports = {
       }
     ],
 
-    // 'sh-waqar/declaration-use-variable': [
-    //   [
-    //     '/background/',
-    //     '/color/',
-    //     '/margin/',
-    //     '/padding/',
-    //     {
-    //       ignoreValues: [
-    //         'transparent',
-    //         'inherit',
-    //         'initial',
-    //         '0',
-    //         'auto'
-    //       ]
-    //     }
-    //   ]
-    // ]
+    'sh-waqar/declaration-use-variable': [
+      [
+        '/animation/',
+        '/background/',
+        '/border/',
+        '/color/',
+        '/columns',
+        '/flex-basis/',
+        '/height/',
+        '/margin/',
+        '/max-height/',
+        '/max-width/',
+        '/padding/',
+        '/shadow/',
+        '/width/',
+        'bottom',
+        'left',
+        'right',
+        'top',
+        {
+          ignoreValues: [
+            '/-\\(/', // -(x) calculations
+            '/.*\\$/', // include $
+            '/\\%/', // percentage %
+            '/percentage/', // sass `percentage()` function
+            '/vw/', // number with vw unit
+            '/vh/', // number with vh unit
+            'transparent',
+            'inherit',
+            'initial',
+            '0',
+            'auto',
+            'currentColor',
+            'inherit',
+            'initial',
+            'none',
+            'solid',
+            'transparent'
+          ]
+        }
+      ]
+    ]
 
   }
 };
