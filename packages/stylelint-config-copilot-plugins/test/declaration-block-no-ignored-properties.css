@@ -1,0 +1,46 @@
+/* stylelint-disable no-duplicate-selectors */
+
+/* declaration-block-no-ignored-properties */
+a {
+  display: inline;
+  width: 100px;
+}
+/* display: inline causes width to be ignored. */
+
+a {
+  display: inline;
+  height: 100px;
+}
+/* display: inline causes height to be ignored. */
+
+a {
+  display: inline;
+  margin: 10px;
+}
+/* display: inline causes margin to be ignored. */
+
+a {
+  display: block;
+  vertical-align: baseline;
+}
+/* display: block causes vertical-align to be ignored. */
+
+a {
+  display: flex;
+  vertical-align: baseline;
+}
+/* display: flex causes vertical-align to be ignored. */
+
+a {
+  position: absolute;
+  vertical-align: baseline;
+}
+/* position: absolute causes vertical-align to be ignored. */
+
+a {
+  float: left;
+  vertical-align: baseline;
+}
+/* /declaration-block-no-ignored-properties */
+
+/* stylelint-enable */
