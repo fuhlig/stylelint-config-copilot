@@ -63,6 +63,9 @@ module.exports = {
     // Specify a pattern for Sass/SCSS-like function names.
     'scss/at-function-pattern': null,
 
+    // This is a rule that checks for situations where users have.
+    'scss/at-each-key-value-single-line': true,
+
     /* ------------------------------------*\
       #AT-IMPORT
     \*------------------------------------ */
@@ -108,6 +111,15 @@ module.exports = {
     'at-rule-blacklist': [
       'debug'
     ],
+
+    /* ------------------------------------*\
+      #FUNCTIONS
+    \*------------------------------------ */
+    // Disallow quoted strings inside the quote function.
+    'scss/function-quote-no-quoted-strings-inside': true,
+
+    // Disallow unquoted strings inside the unquote function.
+    'scss/function-unquote-no-unquoted-strings-inside': null,
 
     /* ------------------------------------*\
       #VARIABLES
