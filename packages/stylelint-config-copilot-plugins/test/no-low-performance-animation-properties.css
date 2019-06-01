@@ -1,0 +1,9 @@
+/* The following pattern is considered warning: */
+div {
+  transition: margin-left 350ms ease-in;
+}
+
+/* The following pattern is not considered warning: */
+div {
+  transition: transform 350ms ease-in;
+}
