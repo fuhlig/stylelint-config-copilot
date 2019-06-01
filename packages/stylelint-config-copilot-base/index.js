@@ -19,7 +19,7 @@ module.exports = {
     'no-missing-end-of-source-newline': true,
 
     // Specify unix or windows linebreaks.
-    'linebreaks': 'unix',
+    'linebreaks': null,
     /* end */
 
     'max-empty-lines': 5,
