@@ -2,6 +2,7 @@
   "name": "stylelint-config-copilot",
   "version": "0.0.1",
   "description": "",
+  "repository": "https://github.com/fuhlig/stylelint-config-copilot",
   "main": "index.js",
   "keywords": [
     "stylelint"
