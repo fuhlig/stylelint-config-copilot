@@ -10,7 +10,7 @@ module.exports = {
     /* start */
 
     // Specify indentation.
-    // 'indentation': 2,
+    'indentation': null,
 
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
@@ -354,7 +354,7 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
 
     // Require a newline or disallow whitespace after the colon of declarations.
-    // 'declaration-colon-newline-after': 'always-multi-line',
+    'declaration-colon-newline-after': null,
     'declaration-empty-line-before': null,
     'declaration-property-unit-blacklist': null,
     'declaration-property-unit-whitelist': null,
