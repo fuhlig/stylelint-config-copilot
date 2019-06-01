@@ -1,0 +1,66 @@
+@import "a";
+@import "b";
+
+/* indentation */
+a {
+  padding: var(--spacing);
+  margin: 10px;
+}
+
+body {
+  padding: auto;
+  color: inherit;
+}
+
+.paint {
+  transition: color 2s ease;
+}
+
+.layout {
+  transition: margin 2s ease;
+}
+
+/* max-empty-lines */
+b {}
+
+.foo {
+  width: calc(100px + 80);
+}
+
+* * {
+  color: #000;
+}
+
+@media (min-width >= 600px) {
+  body {
+    color: #000;
+  }
+}
+
+@media (unknown) {
+  body {
+    background-color: #fff;
+  }
+}
+
+span {
+  /* display: inline; */
+  height: 100px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+div {
+  display: flex;
+  float: left;
+  vertical-align: middle;
+}
+
+/* declaration-colon-newline-after */
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/roboto-regular.woff2") format("woff2"),
+        url("fonts/roboto-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

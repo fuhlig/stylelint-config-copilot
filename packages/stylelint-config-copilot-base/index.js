@@ -10,7 +10,7 @@ module.exports = {
     /* start */
 
     // Specify indentation.
-    'indentation': 2,
+    // 'indentation': 2,
 
     // Disallow end-of-line whitespace.
     'no-eol-whitespace': true,
@@ -31,12 +31,14 @@ module.exports = {
     'max-nesting-depth': [
       3,
       {
-        ignore: ['blockless-at-rules'],
+        ignore: [
+          'blockless-at-rules',
+        ],
         ignoreAtRules: [
           'media',
-          'include'
-        ]
-      }
+          'include',
+        ],
+      },
     ],
 
     // Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
@@ -57,8 +59,8 @@ module.exports = {
     'no-duplicate-at-import-rules': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Disallow units for zero lengths.
@@ -82,8 +84,10 @@ module.exports = {
     'color-named': [
       'never',
       {
-        'ignore': ['inside-function']
-      }
+        'ignore': [
+          'inside-function',
+        ],
+      },
     ],
 
     // Disallow hex colors.
@@ -93,8 +97,8 @@ module.exports = {
     'color-no-invalid-hex': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     /* ------------------------------------*\
@@ -146,8 +150,8 @@ module.exports = {
     'function-linear-gradient-no-nonstandard-direction': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Limit the number of adjacent empty lines within functions.
@@ -184,7 +188,7 @@ module.exports = {
     // Specify a blacklist of disallowed URL schemes.
     'function-url-scheme-blacklist': [
       '/^http/',
-      'ftp'
+      'ftp',
     ],
     'function-url-scheme-whitelist': null,
     'function-whitelist': null,
@@ -229,7 +233,9 @@ module.exports = {
             #UNIT
     \*------------------------------------ */
     // Specify a blacklist of disallowed units.
-    'unit-blacklist': ['in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex'],
+    'unit-blacklist': [
+      'in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex',
+    ],
 
     // Specify a whitelist of allowed units.
     'unit-whitelist': null,
@@ -238,8 +244,8 @@ module.exports = {
     'unit-case': [
       'lower',
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Specify a whitelist of allowed units.
@@ -260,8 +266,8 @@ module.exports = {
       'lower',
       {
         'ignoreKeywords': [
-        ]
-      }
+        ],
+      },
     ],
 
     // Require a newline or disallow whitespace after the commas of value lists.
@@ -297,8 +303,8 @@ module.exports = {
     'property-case': [
       'lower',
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Disallow vendor prefixes for properties.
@@ -308,8 +314,8 @@ module.exports = {
     'property-no-unknown': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Specify a blacklist of disallowed properties.
@@ -348,14 +354,16 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
 
     // Require a newline or disallow whitespace after the colon of declarations.
-    'declaration-colon-newline-after': 'always-multi-line',
+    // 'declaration-colon-newline-after': 'always-multi-line',
     'declaration-empty-line-before': null,
     'declaration-property-unit-blacklist': null,
     'declaration-property-unit-whitelist': null,
     'declaration-property-value-blacklist': [
       {
-        '/^padding/': [ 'auto' ]
-      }
+        '/^padding/': [
+          'auto',
+        ],
+      },
     ],
     'declaration-property-value-whitelist': null,
 
@@ -366,16 +374,16 @@ module.exports = {
     'declaration-block-no-duplicate-properties': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Disallow shorthand properties that override related longhand properties within declaration blocks.
     'declaration-block-no-shorthand-property-overrides': [
       true,
       {
-        'severity': 'error'
-      }
+        'severity': 'error',
+      },
     ],
 
     // Require a newline or disallow whitespace after the semicolons of declaration blocks.
@@ -413,9 +421,9 @@ module.exports = {
       {
         'ignoreAtRules': [
           'if',
-          'else'
-        ]
-      }
+          'else',
+        ],
+      },
     ],
 
     // Require a newline or disallow whitespace before the closing brace of blocks.
@@ -443,9 +451,9 @@ module.exports = {
       {
         'ignoreAtRules': [
           'if',
-          'else'
-        ]
-      }
+          'else',
+        ],
+      },
     ],
 
     // Require a newline or disallow whitespace before the opening brace of blocks.
@@ -513,8 +521,8 @@ module.exports = {
     'selector-max-specificity': [
       '0,4,0',
       {
-        'severity': 'warning'
-      }
+        'severity': 'warning',
+      },
     ],
 
     // Limit the number of adjacent empty lines within selectors.
@@ -538,9 +546,9 @@ module.exports = {
       {
         'ignore': [
           'attribute',
-          'class'
-        ]
-      }
+          'class',
+        ],
+      },
     ],
 
     // Disallow vendor prefixes for selectors.
@@ -635,13 +643,13 @@ module.exports = {
       'always-multi-line',
       {
         'except': [
-          'first-nested'
+          'first-nested',
         ],
         'ignore': [
           'after-comment',
-          'inside-block'
-        ]
-      }
+          'inside-block',
+        ],
+      },
     ],
 
     /* ------------------------------------*\
@@ -706,22 +714,22 @@ module.exports = {
     \*------------------------------------ */
     // Require or disallow an empty line before @rules.
     // There must always be an empty line before @rules.
-    // "at-rule-empty-line-before": [
-    //     "always",
-    //     {
-    //         "ignore": [
-    //             "after-comment",
-    //             "inside-block"
-    //         ],
-    //         "ignoreAtRules": [
-    //             "if",
-    //             "else"
-    //         ],
-    //         "except": [
-    //             "after-same-name"
-    //         ]
-    //     }
-    // ],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        'ignore': [
+          'after-comment',
+          'inside-block',
+        ],
+        'ignoreAtRules': [
+          'if',
+          'else',
+        ],
+        'except': [
+          'after-same-name',
+        ],
+      },
+    ],
 
     // Specify a blacklist of disallowed at-rules.
     'at-rule-blacklist': null,
@@ -736,7 +744,7 @@ module.exports = {
     'at-rule-whitelist': null,
 
     // Require or disallow an empty line before at-rules (Autofixable).
-    'at-rule-empty-line-before': 'always',
+    // 'at-rule-empty-line-before': 'always',
 
     // Specify lowercase or uppercase for at-rules names.
     'at-rule-name-case': 'lower',
@@ -801,6 +809,6 @@ module.exports = {
     'custom-property-empty-line-before': null,
 
     // Specify a pattern for custom properties.
-    'custom-property-pattern': null
-  }
+    'custom-property-pattern': null,
+  },
 };
