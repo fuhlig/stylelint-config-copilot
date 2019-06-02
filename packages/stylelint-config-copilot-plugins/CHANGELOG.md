@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - opinionated config
   - add example manifest
 - add documentation
+- add test-files (fixtures)
