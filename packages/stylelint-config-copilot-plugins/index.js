@@ -6,7 +6,7 @@ module.exports = {
   'plugins': [
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
-    'stylelint-declaration-use-variable'
+    'stylelint-declaration-use-variable',
   ],
   'rules': {
     'plugin/declaration-block-no-ignored-properties': true,
@@ -15,8 +15,8 @@ module.exports = {
     'plugin/no-low-performance-animation-properties': [
       true,
       {
-        ignore: 'paint-properties'
-      }
+        ignore: 'paint-properties',
+      },
     ],
 
     'sh-waqar/declaration-use-variable': [
@@ -56,11 +56,11 @@ module.exports = {
             'initial',
             'none',
             'solid',
-            'transparent'
-          ]
-        }
-      ]
-    ]
+            'transparent',
+          ],
+        },
+      ],
+    ],
 
-  }
+  },
 };
