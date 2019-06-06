@@ -1,6 +1,11 @@
 # stylelint-config-copilot [![Build Status](https://travis-ci.org/fuhlig/stylelint-config-copilot.svg?branch=master)](https://travis-ci.org/fuhlig/stylelint-config-copilot) [![Greenkeeper badge](https://badges.greenkeeper.io/fuhlig/stylelint-config-copilot.svg)](https://greenkeeper.io/)
 
-Highly opinionated stylelint configurations.
+> Highly opinionated stylelint configurations.
+
+
+⚠ Current Status: ⚠
+
+_This project is very much work-in-progress. Right now it's about testing out different rules, combinations and plugins_
 
 
 
