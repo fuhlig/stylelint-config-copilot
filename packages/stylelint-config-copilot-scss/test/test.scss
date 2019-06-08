@@ -63,3 +63,7 @@ $font-weights: (
 a {
   font-family: quote("Helvetica");
 }
+
+@media (prefers-reduced-motion: reduce) {
+  transition: none;
+}
