@@ -21,13 +21,15 @@ module.exports = {
 
     'sh-waqar/declaration-use-variable': [
       [
+        // @TODO:
+        // border (^border-collapse)
         '/animation/',
         '/background/',
         '/border/',
         '/color/',
         '/columns',
         '/flex-basis/',
-        '/height/',
+        'height',
         '/margin/',
         '/max-height/',
         '/max-width/',
