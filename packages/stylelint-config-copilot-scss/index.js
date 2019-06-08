@@ -7,6 +7,9 @@ module.exports = {
     'stylelint-scss',
   ],
   'rules': {
+    // Unset rule as it does it throws a warning when combining `calc` and interpolated Sass var.
+    'function-calc-no-invalid': null,
+
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */
@@ -240,6 +243,15 @@ module.exports = {
     'scss/no-dollar-variables': null,
 
     // Disallow duplicate dollar variables within a stylesheet.
-    'scss/no-duplicate-dollar-variables': true,
+    'scss/no-duplicate-dollar-variables': [
+      true,
+      {
+        'ignoreInsideAtRules': [
+          'mixin',
+          'if',
+          'for',
+        ],
+      },
+    ],
   },
 };
