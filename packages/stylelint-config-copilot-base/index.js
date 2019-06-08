@@ -106,6 +106,7 @@ module.exports = {
     \*------------------------------------ */
     // Specify whether or not quotation marks should be used around font family names.
     // "always-where-required"|"always-where-recommended"|"always-unless-keyword"
+    // @TODO
     'font-family-name-quotes': 'always-unless-keyword',
 
     // # Font weight
@@ -261,14 +262,20 @@ module.exports = {
     // Disallow vendor prefixes for values.
     'value-no-vendor-prefix': true,
 
+    // @TODO:
+    // - deactivated due to `font-family` not being ignored
     // Specify lowercase or uppercase for keywords values.
-    'value-keyword-case': [
-      'lower',
-      {
-        'ignoreKeywords': [
-        ],
-      },
-    ],
+    'value-keyword-case': null,
+    // 'value-keyword-case': [
+    //   'lower',
+    //   {
+    //     'ignoreKeywords': [
+    //     ],
+    //     'ignoreProperties': [
+    //       'font-family',
+    //     ],
+    //   },
+    // ],
 
     // Require a newline or disallow whitespace after the commas of value lists.
     // There must always be a newline after the commas in multi-line value lists.
@@ -724,6 +731,7 @@ module.exports = {
         'ignoreAtRules': [
           'if',
           'else',
+          'mixin',
         ],
         'except': [
           'after-same-name',
@@ -743,9 +751,6 @@ module.exports = {
     // Specify a whitelist of allowed at-rules.
     'at-rule-whitelist': null,
 
-    // Require or disallow an empty line before at-rules (Autofixable).
-    // 'at-rule-empty-line-before': 'always',
-
     // Specify lowercase or uppercase for at-rules names.
     'at-rule-name-case': 'lower',
 
@@ -753,7 +758,7 @@ module.exports = {
     'at-rule-no-unknown': true,
 
     // Require a newline after at-rule names.
-    'at-rule-name-newline-after': 'always-multi-line',
+    'at-rule-name-newline-after': null,
 
     // Require a single space after at-rule names.
     'at-rule-name-space-after': 'always',
