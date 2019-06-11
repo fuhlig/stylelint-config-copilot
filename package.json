@@ -31,7 +31,7 @@
     "eslint-plugin-node": "9.1.0",
     "eslint-plugin-promise": "4.1.1",
     "eslint-plugin-standard": "4.0.0",
-    "husky": "2.4.0",
+    "husky": "2.4.1",
     "lerna": "3.14.1",
     "stylelint": "10.0.1",
     "stylelint-find-new-rules": "1.0.2"
