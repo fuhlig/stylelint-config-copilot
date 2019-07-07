@@ -123,6 +123,10 @@ module.exports = {
     /* ------------------------------------*\
       #FUNCTIONS
     \*------------------------------------ */
+
+    // Encourage the use of the scale-color over sass color-functions (darken, lighten, etc.).
+    'scss/function-color-relative': null,
+
     // Disallow quoted strings inside the quote function.
     'scss/function-quote-no-quoted-strings-inside': true,
 
@@ -179,6 +183,9 @@ module.exports = {
       #COMMENT
     \*------------------------------------ */
 
+    // Disallow /*-comments.
+    'scss/comment-no-loud': null,
+
     // Require or disallow an empty line before //-comments.
     'scss/double-slash-comment-empty-line-before': null,
 
@@ -234,6 +241,9 @@ module.exports = {
 
     // Disallow redundant nesting selectors (&).
     'scss/selector-no-redundant-nesting-selector': true,
+
+    // Disallow union class names with the parent selector (&).
+    'scss/selector-no-union-class-name': true,
 
     /* ------------------------------------*\
       #GENERAL
