@@ -42,6 +42,12 @@ $animiation: "myAnimation";
   }
 }
 
+.block {
+  &__element {
+    width: 100%;
+  }
+}
+
 @include mymixin(foo);
 
 @if($condition) {
