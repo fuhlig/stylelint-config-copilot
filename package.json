@@ -15,11 +15,6 @@
     "test:find-rules": "node test/find-rules",
     "lint:eslint": "eslint --format=pretty . --max-warnings 0"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
-  },
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
