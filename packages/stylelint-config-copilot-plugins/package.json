@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-copilot-plugins",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Opinionated Stylelint-Configuration for stylelint plugins",
   "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-plugins",
   "main": "index.js",
