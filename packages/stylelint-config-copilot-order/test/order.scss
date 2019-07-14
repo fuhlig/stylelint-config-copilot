@@ -1,0 +1,42 @@
+.order {
+  display: block;
+  $spacing: red;
+
+  .child {
+    display: block;
+  }
+
+  @media screen and (min-width: 500px) {
+    display: inline-block;
+  }
+}
+
+.prop-order {
+  background-color: transparent;
+  position: absolute;
+  flex-direction: column;
+  font-size: 1em;
+  left: 0;
+  right: auto;
+  bottom: 100%;
+  padding: 0;
+  margin-left: auto;
+}
+
+.pseudo {
+  display: block;
+  content: '';
+}
+
+.positioning {
+  right: auto;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.transition {
+  transition-duration: 5s;
+  transition-delay: 1s;
+  transiton: all 0.5 ease;
+}
