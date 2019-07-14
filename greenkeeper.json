@@ -5,7 +5,8 @@
         "package.json",
         "packages/stylelint-config-copilot-base/package.json",
         "packages/stylelint-config-copilot-scss/package.json",
-        "packages/stylelint-config-copilot-plugins/package.json"
+        "packages/stylelint-config-copilot-plugins/package.json",
+        "packages/stylelint-config-copilot-order/package.json"
       ]
     }
   }

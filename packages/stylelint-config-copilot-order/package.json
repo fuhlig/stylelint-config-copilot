@@ -1,0 +1,22 @@
+{
+  "name": "stylelint-config-copilot-order",
+  "version": "0.0.1",
+  "description": "Opinionated Stylelint-Configuration for order specific rules with stylelint-order",
+  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stylelint",
+    "linter",
+    "code-analysis",
+    "code-quality"
+  ],
+  "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "10.1.0",
+    "stylelint-order": "3.0.1"
+  }
+}
