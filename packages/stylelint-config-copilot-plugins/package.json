@@ -19,9 +19,7 @@
     "stylelint": "10.1.0",
     "stylelint-declaration-block-no-ignored-properties": "2.1.0",
     "stylelint-declaration-use-variable": "1.7.0",
-    "stylelint-high-performance-animation": "1.2.1"
-  },
-  "devDependencies": {
-    "stylelint-itcss": "^0.3.0"
+    "stylelint-high-performance-animation": "1.2.1",
+    "stylelint-itcss": "0.3.0"
   }
 }
