@@ -25,6 +25,10 @@ module.exports = {
         'allowTemplateLiterals': true,
       },
     ],
+    'quote-props': [
+      'warn',
+      'consistent',
+    ],
     'space-before-function-paren': [
       'warn',
       'never',
