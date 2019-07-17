@@ -36,7 +36,30 @@
 }
 
 .transition {
+  transition-timing-function: ease;
   transition-duration: 5s;
   transition-delay: 1s;
-  transiton: all 0.5 ease;
+}
+
+.flex {
+  order: 3;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+}
+
+.flex-item {
+  order: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: flex-end;
+  flex-basis: auto;
+}
+
+.dimensions {
+  max-height: 500px;
+  height: 100%;
+  width: 50%;
+  min-height: 100px;
 }
