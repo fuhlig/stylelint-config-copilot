@@ -11,25 +11,58 @@ module.exports = {
       'custom-properties',
       'dollar-variables',
       'declarations',
-      'at-rules',
+      'at-rules', /* @TODO */
       'rules',
     ],
     'order/properties-order': [
       'content',
-      'display',
       {
         groupName: 'positioning',
         properties: [
           'position',
-          'left',
-          'right',
-          'top',
-          'bottom',
           'z-index',
         ],
       },
       {
-        groupName: 'flexbox',
+        groupName: 'position-properties',
+        order: 'flexible',
+        properties: [
+          'left',
+          'right',
+          'top',
+          'bottom',
+        ],
+      },
+      {
+        groupName: 'display',
+        properties: [
+          'display',
+        ],
+      },
+      {
+        groupName: 'grid',
+        order: 'flexible',
+        properties: [
+          'grid',
+          'grid-area',
+          'grid-auto-columns',
+          'grid-auto-flow',
+          'grid-auto-rows',
+          'grid-column',
+          'grid-column-end',
+          'grid-column-start',
+          'grid-row',
+          'grid-row-end',
+          'grid-row-start',
+          'grid-template',
+          'grid-template-areas',
+          'grid-template-columns',
+          'grid-template-rows',
+          'gap',
+        ],
+      },
+      {
+        groupName: 'flexbox-container',
         order: 'flexible',
         properties: [
           'flex-direction',
@@ -39,12 +72,65 @@ module.exports = {
           'align-items',
           'justify-content',
           'justify-items',
+        ],
+      },
+      {
+        groupName: 'flexbox-item-size',
+        properties: [
           'flex-grow',
           'flex-shrink',
           'flex-basis',
+        ],
+      },
+      {
+        groupName: 'flexbox-item',
+        order: 'flexible',
+        properties: [
           'order',
           'align-self',
           'justify-self',
+        ],
+      },
+      {
+        groupName: 'float',
+        properties: [
+          'float',
+        ],
+      },
+      {
+        groupName: 'dimensions',
+        properties: [
+          'width',
+          'height',
+          'min-width',
+          'min-height',
+          'max-width',
+          'max-height',
+        ],
+      },
+      {
+        groupName: 'transforms',
+        order: 'flexible',
+        properties: [
+          'transform',
+          'transform-box',
+          'transform-origin',
+          'transform-style',
+        ],
+      },
+      {
+        groupName: 'columns',
+        properties: [
+          'columns',
+          'column-count',
+          'column-fill',
+          'column-gap',
+          'column-span',
+          'column-width',
+          'column-rule',
+          'column-rule-color',
+          'column-rule-style',
+          'column-rule-width',
         ],
       },
       {
@@ -64,10 +150,48 @@ module.exports = {
         ],
       },
       {
+        groupName: 'borders',
+        order: 'flexible',
+        properties: [
+          'border',
+          'border-radius',
+        ],
+      },
+      {
         groupName: 'font',
         properties: [
+          'font-family',
           'font-size',
           'font-weight',
+          'font-style',
+        ],
+      },
+      {
+        groupName: 'typography',
+        order: 'flexible',
+        properties: [
+          'text-decoration',
+          'text-indent',
+          'text-justify',
+          'text-overflow',
+          'letter-spacing',
+          'line-height',
+          'text-align',
+          'word-break',
+          'word-spacing',
+          'word-wrap',
+        ],
+      },
+      {
+        groupName: 'hyphenation',
+        order: 'flexible',
+        properties: [
+          'hyphens',
+          'hyphenate-character',
+          'hyphenate-limit-chars',
+          'hyphenate-limit-last',
+          'hyphenate-limit-lines',
+          'hyphenate-limit-zone',
         ],
       },
       {
@@ -97,6 +221,7 @@ module.exports = {
       },
       {
         groupName: 'background',
+        order: 'flexible',
         properties: [
           'background',
           'background-attachment',
@@ -108,6 +233,12 @@ module.exports = {
           'background-position',
           'background-repeat',
           'background-size',
+        ],
+      },
+      {
+        groupName: 'color',
+        properties: [
+          'color',
         ],
       },
     ],
