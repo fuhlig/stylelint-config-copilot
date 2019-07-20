@@ -1,3 +1,13 @@
+@mixin foo() {
+  background-color: hotpink;
+}
+
+@mixin mq() {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
 .order {
   display: block;
   $spacing: red;
@@ -62,4 +72,36 @@
   height: 100%;
   width: 50%;
   min-height: 100px;
+}
+
+.mixin {
+  @include mq() {
+    background-color: red;
+  }
+  display: block;
+  @include foo();
+}
+
+.parent {
+  @if ($condition) {
+    width: 100%;
+  }
+  @media (min-width: 500) {
+
+  }
+  display: block;
+  @include mq() {
+    background-color: red;
+  }
+  @include foo();
+
+
+
+  .child {
+    width: 50%;
+
+    @if ($condition) {
+      width: 100%;
+    }
+  }
 }
