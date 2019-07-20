@@ -10,8 +10,20 @@ module.exports = {
     'order/order': [
       'custom-properties',
       'dollar-variables',
+      {
+        type: 'at-rule',
+        name: 'include',
+      },
       'declarations',
-      'at-rules', /* @TODO */
+      {
+        type: 'at-rule',
+        name: 'include',
+        hasBlock: true,
+      },
+      {
+        type: 'at-rule',
+        name: 'media',
+      },
       'rules',
     ],
     'order/properties-order': [
