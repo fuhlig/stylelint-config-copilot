@@ -13,6 +13,7 @@ The configs are separated into dedicated packages:
 - [base](/packages/stylelint-config-copilot-base): stylelint's built-in rules
 - [scss](/packages/stylelint-config-copilot-scss): Sass (scss syntax) specific rules
 - [plugins](/packages/stylelint-config-copilot-plugins): rules from various stylelint plugins
+- [order](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order) - order specific rules
 
 Usage information are in the packages' documentations.
 
