@@ -27,3 +27,4 @@ _Example: Rename [`.stylelintrc.example.js`](.stylelintrc.example.js) to `.style
 
 - [stylelint-config-copilot-scss](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-scss) - Shareable config based with scss specific rules
 - [stylelint-config-copilot-plugins](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-plugins) - Shareable config for various stylelint plugins
+- [stylelint-config-copilot-order](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order) - Shareable config for order specific rules

@@ -40,5 +40,6 @@ _Example: Rename [`.stylelintrc.example.js`](.stylelintrc.example.js) to `.style
 
 ## Related
 
-- [stylelint-config-copilot](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-base) - Shareable config based on built-in rules
+- [stylelint-config-copilot-base](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-base) - Shareable config based on built-in rules
 - [stylelint-config-scss](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-scss) - Shareable config for Sass (scss) support
+- [stylelint-config-copilot-order](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order) - Shareable config for order specific rules
