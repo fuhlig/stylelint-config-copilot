@@ -18,6 +18,8 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
     "eslint": "6.1.0",
     "eslint-config-standard": "13.0.1",
     "eslint-config-stylelint": "11.0.0",
