@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev stylelint-config-copilot-plugins
+npm install stylelint-config-copilot-plugins --save-dev 
 ```
 
 The following plugins are included:
@@ -34,6 +34,8 @@ Add this to your [Stylelint config](https://stylelint.io/user-guide/configuratio
 	"extends": "stylelint-config-copilot-plugins"
 }
 ```
+
+The plugins are already imported in the config, no need to set it in the [`plugins` array](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#plugins)
 
 _Example: Rename [`.stylelintrc.example.js`](.stylelintrc.example.js) to `.stylelintrc.js`_
 

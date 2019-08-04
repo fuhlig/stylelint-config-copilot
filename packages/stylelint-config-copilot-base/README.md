@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev stylelint-config-copilot-base
+npm install stylelint-config-copilot-base --save-dev
 ```
 
 

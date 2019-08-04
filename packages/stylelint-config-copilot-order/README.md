@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev stylelint-config-copilot-order
+npm install stylelint-config-copilot-order --save-dev 
 ```
 
 The following plugin is included:
@@ -21,6 +21,8 @@ Add this to your [Stylelint config](https://stylelint.io/user-guide/configuratio
 	"extends": "stylelint-config-copilot-order"
 }
 ```
+
+The plugin is already imported in the config, no need to set it in the [`plugins` array](https://github.com/stylelint/stylelint/blob/master/docs/user-guide/configuration.md#plugins)
 
 _Example: Rename [`.stylelintrc.example.js`](.stylelintrc.example.js) to `.stylelintrc.js`_
 
