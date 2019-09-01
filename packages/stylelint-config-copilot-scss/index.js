@@ -24,6 +24,9 @@ module.exports = {
     // Require or disallow a newline after the closing brace of @if statements.
     'scss/at-if-closing-brace-newline-after': null,
 
+    // Check for equality to null is unnecessarily explicit since null is falsey in Sass.
+    'scss/at-if-no-null': null,
+
     /* ------------------------------------*\
       #AT-ELSE
     \*------------------------------------ */
