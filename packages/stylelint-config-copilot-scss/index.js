@@ -179,6 +179,13 @@ module.exports = {
     'scss/dollar-variable-pattern': null,
 
     /* ------------------------------------*\
+      #DIMENSIONS
+    \*------------------------------------ */
+    // Disallow non-numeric values when interpolating a value with a unit.
+    // [!!!] Throws an error when activated (https://github.com/kristerkari/stylelint-scss/issues/363)
+    // 'scss/dimension-no-non-numeric-values': true,
+
+    /* ------------------------------------*\
       #PLACEHOLDER
     \*------------------------------------ */
 
@@ -266,6 +273,7 @@ module.exports = {
           'mixin',
           'if',
           'for',
+          'each',
         ],
       },
     ],
