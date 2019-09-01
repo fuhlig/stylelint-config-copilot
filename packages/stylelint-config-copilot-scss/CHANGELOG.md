@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - update deps
 - rules:
   - add new rules introducted in stylelint-scss [3.10.0](https://github.com/kristerkari/stylelint-scss/blob/master/CHANGELOG.md#3100)
+  - ignore scoped variables in `@each` directive for duplicated variables
 
 
 ## [0.2.0] - 21.07.2019
