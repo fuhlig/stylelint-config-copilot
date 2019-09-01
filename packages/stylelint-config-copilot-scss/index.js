@@ -123,6 +123,9 @@ module.exports = {
       'debug',
     ],
 
+    // Disallow parentheses in conditional @ rules (if, elsif, while).
+    'scss/at-rule-conditional-no-parentheses': null,
+
     /* ------------------------------------*\
       #FUNCTIONS
     \*------------------------------------ */
