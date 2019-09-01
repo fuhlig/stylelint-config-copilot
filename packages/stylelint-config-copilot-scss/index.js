@@ -85,6 +85,9 @@ module.exports = {
     // Specify whitelist of allowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-whitelist': null,
 
+    // Require or disallow extension in @import commands.
+    'scss/at-import-partial-extension': 'never',
+
     /* ------------------------------------*\
       #AT-MIXINS
     \*------------------------------------ */
