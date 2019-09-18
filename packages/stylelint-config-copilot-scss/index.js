@@ -95,7 +95,8 @@ module.exports = {
     // Require named parameters in at-mixin call rule.
     'scss/at-mixin-named-arguments': [
       'always',
-      { 'ignore':
+      {
+        'ignore':
         [
           'single-argument',
         ],
