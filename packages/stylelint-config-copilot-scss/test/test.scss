@@ -2,6 +2,9 @@ $font:       "Roboto";
 $font-stack: $font;
 $spacing:    auto;
 $animiation: "myAnimation";
+$condition: null;
+
+
 
 @keyframes $animiation {
   //
@@ -72,4 +75,16 @@ a {
 
 @media (prefers-reduced-motion: reduce) {
   transition: none;
+}
+
+@if $condition == null {
+
+}
+
+@import "a.scss";
+
+.numeric-value {
+  $_value: 4;
+
+  width: #{$_value}px;
 }

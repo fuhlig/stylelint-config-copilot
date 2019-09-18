@@ -18,14 +18,14 @@ module.exports = {
       #AT-IF
     \*------------------------------------ */
 
-    // Require or disallow a newline after the closing brace of @if statements.
-    // 'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
-
     // Require a single space or disallow whitespace after the closing brace of @if statements.
     'scss/at-if-closing-brace-space-after': 'always-intermediate',
 
     // Require or disallow a newline after the closing brace of @if statements.
     'scss/at-if-closing-brace-newline-after': null,
+
+    // Check for equality to null is unnecessarily explicit since null is falsey in Sass.
+    'scss/at-if-no-null': null,
 
     /* ------------------------------------*\
       #AT-ELSE
@@ -85,6 +85,9 @@ module.exports = {
     // Specify whitelist of allowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-whitelist': null,
 
+    // Require or disallow extension in @import commands.
+    'scss/at-import-partial-extension': 'never',
+
     /* ------------------------------------*\
       #AT-MIXINS
     \*------------------------------------ */
@@ -120,6 +123,9 @@ module.exports = {
     'at-rule-blacklist': [
       'debug',
     ],
+
+    // Disallow parentheses in conditional @ rules (if, elsif, while).
+    'scss/at-rule-conditional-no-parentheses': null,
 
     /* ------------------------------------*\
       #FUNCTIONS
@@ -172,6 +178,13 @@ module.exports = {
 
     // Specify a pattern for Sass-like variables.
     'scss/dollar-variable-pattern': null,
+
+    /* ------------------------------------*\
+      #DIMENSIONS
+    \*------------------------------------ */
+    // Disallow non-numeric values when interpolating a value with a unit.
+    // [!!!] Throws an error when activated (https://github.com/kristerkari/stylelint-scss/issues/363)
+    // 'scss/dimension-no-non-numeric-values': true,
 
     /* ------------------------------------*\
       #PLACEHOLDER
@@ -261,6 +274,7 @@ module.exports = {
           'mixin',
           'if',
           'for',
+          'each',
         ],
       },
     ],
