@@ -22,6 +22,9 @@ module.exports = {
     'linebreaks': null,
     /* end */
 
+    // Require or disallow the Unicode Byte Order Mark.
+    'unicode-bom': null,
+
     'max-empty-lines': 5,
 
     // Limit the length of a line.
