@@ -38,7 +38,7 @@ stylelintRules(paths.input).then((rules) => {
 
   if (rules.unused.length || rules.deprecated.length || rules.invalid.length) {
     save(rules);
-    return process.exit(1);
+    return process.exit(0);
   } else {
     console.log('✔ Config looks good and up-to-date');
     return process.exit(0);
