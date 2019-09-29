@@ -80,13 +80,15 @@ module.exports = {
     'scss/at-import-no-partial-leading-underscore': null,
 
     // Specify blacklist of disallowed file extensions for partial names in @import commands.
-    'scss/at-import-partial-extension-blacklist': null,
+    'scss/at-import-partial-extension-blacklist': [
+      'scss',
+    ],
 
     // Specify whitelist of allowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-whitelist': null,
 
     // Require or disallow extension in @import commands.
-    'scss/at-import-partial-extension': 'never',
+    'scss/at-import-partial-extension': null,
 
     /* ------------------------------------*\
       #AT-MIXINS

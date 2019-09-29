@@ -82,6 +82,7 @@ a {
 }
 
 @import "a.scss";
+@import "layer.module";
 
 .numeric-value {
   $_value: 4;
