@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.1.5] - 29.09.2019
+- fix:
+  - disable `unicode-bom` rule until it is being fixed by `stylelint-vscode` ([see PR](https://github.com/shinnn/stylelint-vscode/pull/12))
+
+[Pull Request](https://github.com/shinnn/stylelint-vscode/pulls)
 ## [0.1.2] - 21.07.2019
 - docs:
   - add references to other styleling-config-copilot packages
