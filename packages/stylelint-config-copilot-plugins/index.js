@@ -76,6 +76,8 @@ module.exports = {
             'initial',
             '0',
             'auto',
+            '0 auto',
+            'auto 0',
             'currentColor',
             'inherit',
             'initial',
