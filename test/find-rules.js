@@ -16,10 +16,10 @@ const paths = {
 
 function print(rules) {
   console.table([
-    { type: 'used', number: rules.used.length, },
-    { type: 'unused', number: rules.unused.length, },
-    { type: 'deprecated', number: rules.deprecated.length, },
-    { type: 'invalid', number: rules.invalid.length, },
+    { type: 'used', number: rules.used.length },
+    { type: 'unused', number: rules.unused.length },
+    { type: 'deprecated', number: rules.deprecated.length },
+    { type: 'invalid', number: rules.invalid.length },
   ]);
 }
 
