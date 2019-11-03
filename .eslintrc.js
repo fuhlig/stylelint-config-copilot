@@ -35,7 +35,11 @@ module.exports = {
     ],
     'comma-dangle': [
       'warn',
-      'always',
+      {
+        'arrays': 'always-multiline',
+        'objects': 'always-multiline',
+        'functions': 'never',
+      },
     ],
     'array-bracket-newline': [
       'warn',
