@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-copilot-order",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Opinionated Stylelint-Configuration for order specific rules with stylelint-order",
   "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order",
   "main": "index.js",
