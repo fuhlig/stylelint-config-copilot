@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.1.6] - 14.11.2019
+- chore:
+  - update to [`stylelint 11.1.1`](https://github.com/stylelint/stylelint/blob/master/CHANGELOG.md#1111)
+
 ## [0.1.5] - 29.09.2019
 - fix:
   - disable `unicode-bom` rule until it is being fixed by `stylelint-vscode` ([see PR](https://github.com/shinnn/stylelint-vscode/pull/12))
