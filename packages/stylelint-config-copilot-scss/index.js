@@ -280,5 +280,8 @@ module.exports = {
         ],
       },
     ],
+
+    // Disallow duplicate mixins within a stylesheet.
+    'scss/no-duplicate-mixins': true,
   },
 };
