@@ -1,6 +1,8 @@
-import { danger, fail } from 'danger';
+const danger = require('danger');
+const _ = require('lodash');
 
-// No PR is too small to include a description of why you made a change
-if (danger.github.pr.body.length < 10) {
-  fail('Please include a description of your PR changes.');
+const hasPackageChanges = _.includes(danger.git.modified_files, 'package.json');
+const hasLockfileChanges = _.includes(danger.git.modified_files, 'package-lock.json');
+if (hasPackageChanges && !hasLockfileChanges) {
+  danger.warn('There are `package.json` changes with no corresponding lockfile changes');
 }
