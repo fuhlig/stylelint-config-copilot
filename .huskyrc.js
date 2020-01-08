@@ -4,7 +4,7 @@ module.exports = {
   'hooks': {
     'pre-push': tasks([
       'npm test',
-      'npx danger local',
+      'npx danger local --failOnErrors',
     ]),
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
   },
