@@ -17,3 +17,6 @@ jobs:
       - run:
           name: test
           command: npm test
+      - run:
+          name: Danger
+          command: npx danger ci
