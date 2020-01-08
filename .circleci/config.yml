@@ -19,4 +19,4 @@ jobs:
           command: npm test
       - run:
           name: Danger
-          command: npx danger ci
+          command: npx danger ci --failOnErrors
