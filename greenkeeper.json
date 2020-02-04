@@ -9,5 +9,13 @@
         "packages/stylelint-config-copilot-order/package.json"
       ]
     }
+  },
+  "commitMessages": {
+    "dependencyUpdate": "chore!: update ${dependency} to version ${version} \n\n BREAKING CHANGE: Updated dependencies, run `npm install`",
+    "devDependencyUpdate": "chore!: update ${dependency} to version ${version} \n\n BREAKING CHANGE: Updated dependencies, run `npm install`"
+  },
+  "prTitles": {
+    "basicPR": "Update ${dependency} to the latest version :rocket:",
+    "groupPR": "Update ${dependency} in group {$group} to the latest version :rocket:"
   }
 }
