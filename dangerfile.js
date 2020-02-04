@@ -15,12 +15,14 @@ COMMITS.forEach(commit => {
   if (message.includes(breakingChange.indicator)) {
     if (!message.includes(breakingChange.title)) {
       warn(`The commit message title indicates a breaking change. Make sure to include a "BREAKING CHANGE" in the commit footer to give more details about the breaking change. ${breakingChange.reference}`);
+      warn(message);
     }
   }
 
   if (message.includes(breakingChange.title)) {
     if (!message.includes(breakingChange.indicator)) {
       warn(`The commit includes a breaking change without an indicator in the title ("<type>!: <title>"). Make sure to include it to draw attention to the breaking change. See [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#commit-message-with-both-and-breaking-change-footer) for details. ${breakingChange.reference}`);
+      warn(message);
     }
   }
 });
@@ -52,8 +54,6 @@ schedule(async() => {
   const packageDiff = await danger.git.JSONDiffForFile('package.json');
 
   if (hasUpdatedDependencies(packageDiff)) {
-    warn('Updated dependencies, did you mark it as a breaking change?');
-
     if (!hasUpdatedLockfile()) {
       fail('There are changes in `package.json` with no corresponding changes in `package-lock.json`.\n Make sure to run `npm install` to update modules and lock-file.');
     }
