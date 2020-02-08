@@ -4,6 +4,8 @@
   "description": "",
   "repository": "https://github.com/fuhlig/stylelint-config-copilot",
   "main": "index.js",
+  "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
+  "license": "MIT",
   "keywords": [
     "stylelint"
   ],
@@ -15,8 +17,16 @@
     "test:find-rules": "node test/find-rules",
     "lint:eslint": "eslint --format=pretty . --max-warnings 0"
   },
-  "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
-  "license": "MIT",
+  "greenkeeper": {
+    "commitMessages": {
+      "dependencyUpdate": "chore!: update ${dependency} to version ${version} \n\n BREAKING CHANGE: Updated dependencies, run `npm install`",
+      "devDependencyUpdate": "chore!: update ${dependency} to version ${version} \n\n BREAKING CHANGE: Updated dependencies, run `npm install`"
+    },
+    "prTitles": {
+      "basicPR": "Update ${dependency} to the latest version :rocket:",
+      "groupPR": "Update ${dependency} in group {$group} to the latest version :rocket:"
+    }
+  },
   "devDependencies": {
     "@babel/core": "7.8.4",
     "@babel/node": "7.8.4",
