@@ -1,45 +1,44 @@
 version: 2.1
+
+commands:
+  install:
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+  test:
+    steps:
+      - run:
+          name: run tests
+          command: npm test
+  lint:
+    steps:
+      - run:
+          name: lint with danger.js
+          command: npx danger ci --failOnErrors
+
 jobs:
   build-node-lts:
     docker:
       - image: circleci/node:lts
     steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Install Dependencies
-          command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: Danger
-          command: npx danger ci --failOnErrors
+      - install
+      - test
+      - lint
   build-node-10:
     docker:
       - image: circleci/node:10.19
     steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: Install Dependencies
-          command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
-      - run:
-          name: test
-          command: npm test
-      - run:
-          name: Danger
-          command: npx danger ci --failOnErrors
+      - install
+      - test
+      - lint
 
 workflows:
   version: 2
