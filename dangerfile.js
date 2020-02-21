@@ -8,7 +8,7 @@ COMMITS.forEach(commit => {
   const message = commit.message;
   const breakingChange = {
     indicator: '!:',
-    title: 'BREAKING-CHANGE',
+    title: 'BREAKING CHANGE',
     reference: 'See [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#commit-message-with-both-and-breaking-change-footer) for details.',
   };
 
