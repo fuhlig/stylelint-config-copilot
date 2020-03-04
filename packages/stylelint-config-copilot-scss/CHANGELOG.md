@@ -4,10 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 04.03.2020
+- chore:
+  - update to [`stylelint-scss 3.14.2`](https://github.com/kristerkari/stylelint-scss/blob/master/CHANGELOG.md#3142)
+
 ## [0.5.0] - 17.11.2019
 - chore:
   - update to [`stylelint 12.0.0`](https://github.com/stylelint/stylelint/blob/master/CHANGELOG.md#1200)
-  - update to [`stylelint 3.12.1`](https://github.com/kristerkari/stylelint-scss/blob/master/CHANGELOG.md#3121)
+  - update to [`stylelint-scss 3.12.1`](https://github.com/kristerkari/stylelint-scss/blob/master/CHANGELOG.md#3121)
 - rules: 
   - add new rules introducted in stylelint-scss [3.12.0](https://github.com/kristerkari/stylelint-scss/blob/master/CHANGELOG.md#3120)
 
