@@ -23,7 +23,7 @@ module.exports = {
     /* end */
 
     // Require or disallow the Unicode Byte Order Mark.
-    // 'unicode-bom': null,
+    'unicode-bom': null,
 
     'max-empty-lines': 5,
 
