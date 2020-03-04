@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-copilot-scss",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Opinionated Stylelint-Configuration for Sass (scss)",
   "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-scss",
   "main": "index.js",
