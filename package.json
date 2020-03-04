@@ -24,7 +24,7 @@
     },
     "prTitles": {
       "basicPR": "Update ${dependency} to the latest version :rocket:",
-      "groupPR": "Update ${dependency} in group {$group} to the latest version :rocket:"
+      "groupPR": "Update ${dependency} in group ${group} to the latest version :rocket:"
     }
   },
   "devDependencies": {
