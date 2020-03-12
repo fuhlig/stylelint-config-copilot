@@ -1,4 +1,4 @@
-# stylelint-config-copilot [![CircleCI](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master.svg?style=svg)](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master)  [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+# stylelint-config-copilot [![CircleCI](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master.svg?style=svg)](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master)  [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![Known Vulnerabilities](https://snyk.io/test/github/fuhlig/stylelint-config-copilot//badge.svg)](https://snyk.io/test/github/fuhlig/stylelint-config-copilot/)
 
 
 
