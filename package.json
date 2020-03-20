@@ -18,7 +18,7 @@
     "lint:eslint": "eslint --format=pretty . --max-warnings 0"
   },
   "devDependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.9.0",
     "@babel/node": "7.8.7",
     "@babel/preset-env": "7.8.7",
     "@babel/register": "7.8.6",
