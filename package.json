@@ -18,13 +18,13 @@
     "lint:eslint": "eslint --format=pretty . --max-warnings 0"
   },
   "devDependencies": {
-    "@babel/core": "7.8.7",
+    "@babel/core": "7.9.0",
     "@babel/node": "7.8.7",
     "@babel/preset-env": "7.9.0",
-    "@babel/register": "7.8.6",
+    "@babel/register": "7.9.0",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "danger": "9.3.0",
+    "danger": "10.0.0",
     "eslint": "6.8.0",
     "eslint-config-standard": "14.1.0",
     "eslint-config-stylelint": "11.1.0",
