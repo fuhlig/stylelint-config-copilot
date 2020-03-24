@@ -142,6 +142,25 @@ module.exports = {
     // Disallow unquoted strings inside the unquote function.
     'scss/function-unquote-no-unquoted-strings-inside': null,
 
+    // Require for variables to be put first in a block (a rule or in root)
+    'scss/dollar-variable-first-in-block': [
+      true,
+      {
+        'ignore': [
+          'comments',
+          'imports',
+        ],
+        'except': [
+          'root',
+          'at-rule',
+          'function',
+          'mixin',
+          'if-else',
+          'loops',
+        ],
+      },
+    ],
+
     /* ------------------------------------*\
       #VARIABLES
     \*------------------------------------ */
