@@ -194,6 +194,18 @@ module.exports = {
       },
     ],
 
+    // Require an empty line or disallow empty lines after $-variable declarations.
+    'scss/dollar-variable-empty-line-after': [
+      null,
+      {
+        'except': [
+          'last-nested',
+          'before-comment',
+          'before-dollar-variable',
+        ],
+      },
+    ],
+
     // Disallow Sass variables that are used without interpolation with CSS features that use custom identifiers.
     'scss/dollar-variable-no-missing-interpolation': true,
 
