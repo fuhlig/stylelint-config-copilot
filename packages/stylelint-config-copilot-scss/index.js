@@ -133,6 +133,9 @@ module.exports = {
       #FUNCTIONS
     \*------------------------------------ */
 
+    // Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
+    'scss/no-global-function-names': null,
+
     // Encourage the use of the scale-color over sass color-functions (darken, lighten, etc.).
     'scss/function-color-relative': null,
 
