@@ -36,7 +36,7 @@
     "husky": "4.2.5",
     "lerna": "3.20.2",
     "lodash": "4.17.15",
-    "stylelint": "13.3.0",
+    "stylelint": "13.3.2",
     "stylelint-find-new-rules": "1.2.0"
   }
 }
