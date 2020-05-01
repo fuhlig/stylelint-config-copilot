@@ -5,7 +5,9 @@
   "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "stylelint",
@@ -17,6 +19,8 @@
   "license": "MIT",
   "dependencies": {
     "stylelint": "13.3.3",
-    "stylelint-order": "4.0.0"
-  }
+    "stylelint-order": "4.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
