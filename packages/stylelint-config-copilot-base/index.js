@@ -104,6 +104,15 @@ module.exports = {
       },
     ],
 
+    // Specify modern or legacy notation for applicable color-functions
+    'color-function-notation': null,
+
+    // Specify percentage or number notation for alpha-values
+    'alpha-value-notation': null,
+
+    // Specify number or angle notation for degree hues
+    'hue-degree-notation': null,
+
     /* ------------------------------------*\
             #FONT-FAMILY
     \*------------------------------------ */
