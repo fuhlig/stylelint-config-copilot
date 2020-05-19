@@ -7,8 +7,14 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "keywords": [
-    "stylelint"
+    "stylelint",
+    "linter",
+    "code-analysis",
+    "code-quality"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "preinstall": "npx lerna clean -y",
     "postinstall": "npm run lerna:setup",
