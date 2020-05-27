@@ -21,7 +21,7 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "snyk": "1.324.0",
+    "snyk": "1.330.2",
     "stylelint": "13.5.0",
     "stylelint-scss": "3.17.2"
   },
