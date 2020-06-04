@@ -23,7 +23,7 @@
   "dependencies": {
     "snyk": "1.324.0",
     "stylelint": "13.5.0",
-    "stylelint-order": "4.0.0"
+    "stylelint-order": "4.1.0"
   },
   "snyk": true
 }
