@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "snyk": "1.324.0",
-    "stylelint": "13.5.0",
+    "stylelint": "13.6.0",
     "stylelint-scss": "3.17.2"
   },
   "snyk": true
