@@ -23,7 +23,7 @@
   "dependencies": {
     "snyk": "1.339.2",
     "stylelint": "13.6.0",
-    "stylelint-scss": "3.17.2"
+    "stylelint-scss": "3.18.0"
   },
   "snyk": true
 }
