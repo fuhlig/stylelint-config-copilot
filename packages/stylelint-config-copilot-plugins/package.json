@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "snyk": "1.339.2",
-    "stylelint": "13.6.0",
+    "stylelint": "13.6.1",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-declaration-use-variable": "1.7.2",
     "stylelint-high-performance-animation": "1.5.1",
