@@ -8,9 +8,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "stylelint",
@@ -21,12 +19,10 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "snyk": "1.339.2",
     "stylelint": "13.6.1",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-declaration-use-variable": "1.7.2",
     "stylelint-high-performance-animation": "1.5.1",
     "stylelint-itcss": "0.4.0"
-  },
-  "snyk": true
+  }
 }
