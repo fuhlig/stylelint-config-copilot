@@ -19,7 +19,7 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "13.6.1",
+    "stylelint": "13.7.0",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-declaration-use-variable": "1.7.2",
     "stylelint-high-performance-animation": "1.5.1",
