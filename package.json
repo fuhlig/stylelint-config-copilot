@@ -42,7 +42,7 @@
     "husky": "4.3.0",
     "lerna": "3.22.1",
     "lodash": "4.17.20",
-    "stylelint": "13.6.1",
+    "stylelint": "13.7.2",
     "stylelint-find-new-rules": "3.0.1",
     "yargs-parser": "19.0.4"
   }
