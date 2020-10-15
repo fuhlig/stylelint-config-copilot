@@ -44,6 +44,6 @@
     "lodash": "4.17.20",
     "stylelint": "13.6.1",
     "stylelint-find-new-rules": "3.0.0",
-    "yargs-parser": "19.0.4"
+    "yargs-parser": "20.2.2"
   }
 }
