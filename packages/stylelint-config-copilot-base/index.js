@@ -354,10 +354,6 @@ module.exports = {
     // There must always be a single space before the bang.
     'declaration-bang-space-before': 'always',
 
-    // Require a newline or disallow whitespace after the colon of declarations.
-    // There must always be a newline after the colon if the declaration"s value is multi-line.
-    // "declaration-colon-newline-after": "always-multi-line",
-
     // Require a single space or disallow whitespace after the colon of declarations.
     // There must always be a single space after the colon if the declaration"s value is single-line.
     'declaration-colon-space-after': 'always-single-line',
