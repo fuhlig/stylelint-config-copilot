@@ -134,8 +134,8 @@ module.exports = {
     /* ------------------------------------*\
             #FUNCTION
     \*------------------------------------ */
-    // Specify a blacklist of disallowed functions.
-    'function-blacklist': null,
+    // Specify a disallowed-list of disallowed functions.
+    'function-disallowed-list': null,
 
     // Disallow an unspaced operator within calc functions.
     'function-calc-no-unspaced-operator': true,
@@ -188,8 +188,8 @@ module.exports = {
     // always | never
     'function-url-quotes': 'always',
 
-    // Specify a whitelist of only allowed functions.
-    // "function-whitelist": false,
+    // Specify a allowed-list of only allowed functions.
+    // "function-allowed-list": false,
 
     // Require a single space or disallow whitespace after functions.
     // There must always be a single space after the function.
@@ -198,13 +198,13 @@ module.exports = {
     // Disallow scheme-relative urls.
     'function-url-no-scheme-relative': null,
 
-    // Specify a blacklist of disallowed URL schemes.
-    'function-url-scheme-blacklist': [
+    // Specify a disallowed-list of disallowed URL schemes.
+    'function-url-scheme-disallowed-list': [
       '/^http/',
       'ftp',
     ],
-    'function-url-scheme-whitelist': null,
-    'function-whitelist': null,
+    'function-url-scheme-allowed-list': null,
+    'function-allowed-list': null,
 
     /* ------------------------------------*\
             #NUMBER
@@ -245,13 +245,13 @@ module.exports = {
     /* ------------------------------------*\
             #UNIT
     \*------------------------------------ */
-    // Specify a blacklist of disallowed units.
-    'unit-blacklist': [
+    // Specify a disallowed-list of disallowed units.
+    'unit-disallowed-list': [
       'in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex',
     ],
 
-    // Specify a whitelist of allowed units.
-    'unit-whitelist': null,
+    // Specify a allowed-list of allowed units.
+    'unit-allowed-list': null,
 
     // Specify lowercase or uppercase for units.
     'unit-case': [
@@ -261,8 +261,8 @@ module.exports = {
       },
     ],
 
-    // Specify a whitelist of allowed units.
-    // "unit-whitelist": false,
+    // Specify a allowed-list of allowed units.
+    // "unit-allowed-list": false,
 
     // Disallow unknown units.
     'unit-no-unknown': true,
@@ -337,11 +337,11 @@ module.exports = {
       },
     ],
 
-    // Specify a blacklist of disallowed properties.
-    'property-blacklist': null,
+    // Specify a disallowed-list of disallowed properties.
+    'property-disallowed-list': null,
 
-    // Specify a whitelist of allowed properties.
-    'property-whitelist': null,
+    // Specify a allowed-list of allowed properties.
+    'property-allowed-list': null,
 
     /* ------------------------------------*\
             #DECLARATION
@@ -375,16 +375,16 @@ module.exports = {
     // Require a newline or disallow whitespace after the colon of declarations.
     'declaration-colon-newline-after': null,
     'declaration-empty-line-before': null,
-    'declaration-property-unit-blacklist': null,
-    'declaration-property-unit-whitelist': null,
-    'declaration-property-value-blacklist': [
+    'declaration-property-unit-disallowed-list': null,
+    'declaration-property-unit-allowed-list': null,
+    'declaration-property-value-disallowed-list': [
       {
         '/^padding/': [
           'auto',
         ],
       },
     ],
-    'declaration-property-value-whitelist': null,
+    'declaration-property-value-allowed-list': null,
 
     /* ------------------------------------*\
             #DECLARATION-BLOCK
@@ -493,11 +493,11 @@ module.exports = {
     // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
     'selector-attribute-brackets-space-inside': 'never',
 
-    // Specify a blacklist of disallowed attribute operators.
-    // "selector-attribute-operator-blacklist": false,
+    // Specify a disallowed-list of disallowed attribute operators.
+    // "selector-attribute-operator-disallowed-list": false,
 
-    // Specify a whitelist of allowed attribute operators.
-    // "selector-attribute-operator-whitelist": false,
+    // Specify a allowed-list of allowed attribute operators.
+    // "selector-attribute-operator-allowed-list": false,
 
     // Require a single space or disallow whitespace after operators within attribute selectors.
     'selector-attribute-operator-space-after': 'never',
@@ -597,20 +597,20 @@ module.exports = {
     // Disallow unknown type selectors.
     'selector-type-no-unknown': true,
 
-    // Specify a blacklist of disallowed attribute operators.
-    'selector-attribute-operator-blacklist': null,
+    // Specify a disallowed-list of disallowed attribute operators.
+    'selector-attribute-operator-disallowed-list': null,
 
-    // Specify a whitelist of allowed attribute operators.
-    'selector-attribute-operator-whitelist': null,
+    // Specify a allowed-list of allowed attribute operators.
+    'selector-attribute-operator-allowed-list': null,
 
     // Specify a pattern for class selectors.
     'selector-class-pattern': null,
 
-    // Specify a blacklist of disallowed combinators.
-    'selector-combinator-blacklist': null,
+    // Specify a disallowed-list of disallowed combinators.
+    'selector-combinator-disallowed-list': null,
 
-    // Specify a whitelist of allowed combinators.
-    'selector-combinator-whitelist': null,
+    // Specify a allowed-list of allowed combinators.
+    'selector-combinator-allowed-list': null,
 
     // Specify a pattern for ID selectors.
     'selector-id-pattern': null,
@@ -624,17 +624,17 @@ module.exports = {
     // Specify a pattern for the selectors of rules nested within rules.
     'selector-nested-pattern': null,
 
-    // Specify a blacklist of disallowed pseudo-class selectors.
-    'selector-pseudo-class-blacklist': null,
+    // Specify a disallowed-list of disallowed pseudo-class selectors.
+    'selector-pseudo-class-disallowed-list': null,
 
-    // Specify a whitelist of allowed pseudo-class selectors.
-    'selector-pseudo-class-whitelist': null,
+    // Specify a allowed-list of allowed pseudo-class selectors.
+    'selector-pseudo-class-allowed-list': null,
 
-    // Specify a blacklist of disallowed pseudo-element selectors.
-    'selector-pseudo-element-blacklist': null,
+    // Specify a disallowed-list of disallowed pseudo-element selectors.
+    'selector-pseudo-element-disallowed-list': null,
 
-    // Specify a whitelist of allowed pseudo-element selectors.
-    'selector-pseudo-element-whitelist': null,
+    // Specify a allowed-list of allowed pseudo-element selectors.
+    'selector-pseudo-element-allowed-list': null,
 
     /* ------------------------------------*\
             #SELECTOR-LIST
@@ -691,14 +691,14 @@ module.exports = {
     // Disallow vendor prefixes for media feature names.
     'media-feature-name-no-vendor-prefix': null,
 
-    // Specify a blacklist of disallowed media feature names.
-    'media-feature-name-blacklist': null,
+    // Specify a disallowed-list of disallowed media feature names.
+    'media-feature-name-disallowed-list': null,
 
-    // Specify a whitelist of allowed media feature name and value pairs.
-    'media-feature-name-value-whitelist': null,
+    // Specify a allowed-list of allowed media feature name and value pairs.
+    'media-feature-name-value-allowed-list': null,
 
-    // Specify a whitelist of allowed media feature names.
-    'media-feature-name-whitelist': null,
+    // Specify a allowed-list of allowed media feature names.
+    'media-feature-name-allowed-list': null,
 
     // Disallow unknown media feature names.
     'media-feature-name-no-unknown': true,
@@ -751,17 +751,17 @@ module.exports = {
       },
     ],
 
-    // Specify a blacklist of disallowed at-rules.
-    'at-rule-blacklist': null,
+    // Specify a disallowed-list of disallowed at-rules.
+    'at-rule-disallowed-list': null,
 
     // Disallow vendor prefixes for at-rules.
     'at-rule-no-vendor-prefix': true,
 
     // Specify a requirelist of properties for an at-rule.
-    'at-rule-property-requirelist': null,
+    'at-rule-property-required-list': null,
 
-    // Specify a whitelist of allowed at-rules.
-    'at-rule-whitelist': null,
+    // Specify a allowed-list of allowed at-rules.
+    'at-rule-allowed-list': null,
 
     // Specify lowercase or uppercase for at-rules names.
     'at-rule-name-case': 'lower',
@@ -809,8 +809,8 @@ module.exports = {
     // Require or disallow whitespace on the inside of comment markers (Autofixable).
     'comment-whitespace-inside': 'always',
 
-    // Specify a blacklist of disallowed words within comments.
-    'comment-word-blacklist': null,
+    // Specify a disallowed-list of disallowed words within comments.
+    'comment-word-disallowed-list': null,
 
     // Disallow double-slash comments (//...) which are not supported by CSS and could lead to unexpected results.
     'no-invalid-double-slash-comments': true,
