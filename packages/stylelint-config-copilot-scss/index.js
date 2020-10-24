@@ -80,7 +80,7 @@ module.exports = {
     'scss/at-import-no-partial-leading-underscore': null,
 
     // Specify disallowed-list of disallowed file extensions for partial names in @import commands.
-    'scss/at-import-partial-extension-disallowed-list': [
+    'scss/at-import-partial-extension-blacklist': [
       'scss',
     ],
 
