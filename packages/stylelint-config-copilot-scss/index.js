@@ -216,6 +216,12 @@ module.exports = {
     'scss/dollar-variable-pattern': null,
 
     /* ------------------------------------*\
+      #MAPS
+    \*------------------------------------ */
+    // Require quoted keys in Sass maps.
+    'scss/map-keys-quotes': 'always',
+
+    /* ------------------------------------*\
       #DIMENSIONS
     \*------------------------------------ */
     // Disallow non-numeric values when interpolating a value with a unit.
