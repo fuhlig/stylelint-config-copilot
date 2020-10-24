@@ -758,7 +758,7 @@ module.exports = {
     'at-rule-no-vendor-prefix': true,
 
     // Specify a requirelist of properties for an at-rule.
-    'at-rule-property-requirelist': null,
+    'at-rule-property-required-list': null,
 
     // Specify a allowed-list of allowed at-rules.
     'at-rule-allowed-list': null,
