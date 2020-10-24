@@ -10,7 +10,7 @@ const stylelintRules = require('stylelint-find-new-rules');
 const fs = require('fs');
 
 const paths = {
-  input: './packages/stylelint-config-copilot-base/index.js',
+  input: './.stylelintrc.js',
   output: './test/find-rules.log.json',
 };
 
