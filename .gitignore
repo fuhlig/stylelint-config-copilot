@@ -3,6 +3,6 @@ node_modules/
 .history
 
 # for local testing purposes
-.stylelintrc.js
+./.stylelintrc.js
 
 test/find-rules.log.json
