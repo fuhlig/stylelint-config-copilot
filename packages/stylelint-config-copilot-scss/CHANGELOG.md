@@ -34,7 +34,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.4.0] - 29.09.2019
 - rules:
   - disable general import extension rule to fix `dot.separted.file` as extension warning
-  - add `scss` to import extension blacklist `file.scss` is considered as a warning
+  - add `scss` to import extension disallowed-list `file.scss` is considered as a warning
 
 ## [0.3.2] - 27.09.2019
 - deps:

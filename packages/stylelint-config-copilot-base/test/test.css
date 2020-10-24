@@ -83,7 +83,7 @@ content: "first
 second";
 }
 
-/* unit-blacklist */
+/* unit-disallowed-list */
 a { font-size: 1in; }
 a { font-size: 1pt; }
 a { font-size: 1pc; }
@@ -316,7 +316,7 @@ a {
   font-family: Arial;
 }
 
-/* function-url-scheme-blacklist */
+/* function-url-scheme-disallowed-list */
 .test {
   background-image: url("http://www.google.de/image.jpg");
   background-image: url("ftp://some-ftp-url.com");
