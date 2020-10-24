@@ -100,3 +100,8 @@ a {
 @unknown rule {
   non: sense;
 }
+
+.dimension-no-non-numeric-values {
+  $value: 4;
+  padding: #{value}px;
+}
