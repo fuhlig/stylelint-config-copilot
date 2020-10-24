@@ -7,6 +7,10 @@ module.exports = {
     'stylelint-order',
   ],
   'rules': {
+    // Specify the alphabetical order of properties within declaration blocks.
+    'order/properties-alphabetical-order': null,
+
+    // Specify the order of content within declaration blocks.
     'order/order': [
       'custom-properties',
       'dollar-variables',
@@ -26,6 +30,8 @@ module.exports = {
       },
       'rules',
     ],
+
+    // Specify the order of properties within declaration blocks.
     'order/properties-order': [
       'content',
       {
