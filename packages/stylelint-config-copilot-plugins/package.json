@@ -22,7 +22,7 @@
     "stylelint": "13.7.2",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-declaration-use-variable": "1.7.2",
-    "stylelint-high-performance-animation": "1.5.1",
+    "stylelint-high-performance-animation": "1.5.2",
     "stylelint-itcss": "0.4.0"
   }
 }
