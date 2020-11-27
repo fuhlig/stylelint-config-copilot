@@ -247,7 +247,7 @@ module.exports = {
     \*------------------------------------ */
     // Specify a disallowed-list of disallowed units.
     'unit-disallowed-list': [
-      'in', 'pt', 'pc', 'mm', 'cm', 'ch', 'ex',
+      'in', 'pt', 'pc', 'mm', 'cm', 'ex',
     ],
 
     // Specify a allowed-list of allowed units.
