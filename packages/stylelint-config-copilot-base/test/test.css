@@ -352,3 +352,7 @@ b {
 
 
 /* stylelint-enable */
+
+.unit-disallowed-list {
+  width: 10ch; /* stylelint-disable-line sh-waqar/declaration-use-variable */
+}
