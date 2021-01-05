@@ -40,6 +40,8 @@ module.exports = {
         ignoreAtRules: [
           'media',
           'include',
+          'if',
+          'else',
         ],
       },
     ],
