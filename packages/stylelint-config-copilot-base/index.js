@@ -42,6 +42,7 @@ module.exports = {
           'include',
           'if',
           'else',
+          'else if',
         ],
       },
     ],
