@@ -215,10 +215,6 @@ module.exports = {
     // There must always be a leading zero.
     'number-leading-zero': 'always',
 
-    // Limit the number of decimal places allowed in numbers.
-    // There must be a maximum of 2 decimal places
-    // "number-max-precision": 2,
-
     // Disallow trailing zeros within numbers.
     'number-no-trailing-zeros': true,
 
