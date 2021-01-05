@@ -616,7 +616,7 @@ module.exports = {
     'selector-max-pseudo-class': null,
 
     // Limit the number of universal selectors in a selector.
-    'selector-max-universal': 1,
+    'selector-max-universal': 2,
 
     // Specify a pattern for the selectors of rules nested within rules.
     'selector-nested-pattern': null,
