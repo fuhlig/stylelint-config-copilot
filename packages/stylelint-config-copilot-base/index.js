@@ -388,6 +388,9 @@ module.exports = {
       true,
       {
         'severity': 'error',
+        'ignore': [
+          'consecutive-duplicates-with-different-values',
+        ],
       },
     ],
 
