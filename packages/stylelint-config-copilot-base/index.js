@@ -745,6 +745,8 @@ module.exports = {
         ],
         'except': [
           'after-same-name',
+          'blockless-after-same-name-blockless',
+          'blockless-after-blockless',
         ],
       },
     ],
