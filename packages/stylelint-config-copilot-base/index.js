@@ -739,9 +739,13 @@ module.exports = {
           'inside-block',
         ],
         'ignoreAtRules': [
+          'import',
           'if',
           'else',
           'mixin',
+          'include',
+          'for',
+          'each',
         ],
         'except': [
           'after-same-name',
