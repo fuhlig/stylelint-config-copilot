@@ -220,6 +220,28 @@ module.exports = {
         ],
       },
       {
+        groupName: 'background',
+        order: 'flexible',
+        properties: [
+          'background',
+          'background-attachment',
+          'background-blend-mode',
+          'background-clip',
+          'background-color',
+          'background-image',
+          'background-origin',
+          'background-position',
+          'background-repeat',
+          'background-size',
+        ],
+      },
+      {
+        groupName: 'color',
+        properties: [
+          'color',
+        ],
+      },
+      {
         groupName: 'transition',
         properties: [
           'transition',
@@ -242,28 +264,6 @@ module.exports = {
           'animation-name',
           'animation-play-state',
           'animation-timing-function',
-        ],
-      },
-      {
-        groupName: 'background',
-        order: 'flexible',
-        properties: [
-          'background',
-          'background-attachment',
-          'background-blend-mode',
-          'background-clip',
-          'background-color',
-          'background-image',
-          'background-origin',
-          'background-position',
-          'background-repeat',
-          'background-size',
-        ],
-      },
-      {
-        groupName: 'color',
-        properties: [
-          'color',
         ],
       },
     ],
