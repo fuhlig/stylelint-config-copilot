@@ -45,10 +45,10 @@ module.exports = {
         groupName: 'position-properties',
         order: 'flexible',
         properties: [
-          'left',
-          'right',
           'top',
           'bottom',
+          'left',
+          'right',
         ],
       },
       {
