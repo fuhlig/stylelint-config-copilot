@@ -12,23 +12,28 @@ module.exports = {
 
     // Specify the order of content within declaration blocks.
     'order/order': [
-      'custom-properties',
-      'dollar-variables',
+      [
+        'custom-properties',
+        'dollar-variables',
+        {
+          type: 'at-rule',
+          name: 'include',
+        },
+        'declarations',
+        {
+          type: 'at-rule',
+          name: 'include',
+          hasBlock: true,
+        },
+        {
+          type: 'at-rule',
+          name: 'media',
+        },
+        'rules',
+      ],
       {
-        type: 'at-rule',
-        name: 'include',
+        disableFix: true,
       },
-      'declarations',
-      {
-        type: 'at-rule',
-        name: 'include',
-        hasBlock: true,
-      },
-      {
-        type: 'at-rule',
-        name: 'media',
-      },
-      'rules',
     ],
 
     // Specify the order of properties within declaration blocks.
