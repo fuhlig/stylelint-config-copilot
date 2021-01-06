@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 06.01.2021
+- rules:
+  - add properties to typography group
+  - change order of position properties:
+    - order: top, bottom, left, right
+    - this has no affect on the linting as the `order` is set to `flexible`
+    - has only affect when using autofix option as this order will be used    IF autofix re-orders properties
+  - disable autofix for `order/order`:
+    - as autofix for selector ordering can have inversive effects despite 
+    code formatting & refactoring, autofix is disabled for it
+  - reorder properties for transitions & animations:
+    Order below `background-color` & `color` as those are subject
+    to be animated and should therefor be defined
+    before animation declarations.
 ## [0.3.1] - 24.10.2020
 - chore:
   - update dependencies

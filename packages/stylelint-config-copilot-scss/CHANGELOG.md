@@ -4,6 +4,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 06.01.2021
+- rules:
+  - do not force quotes for map-keys
+    - do not force quotes (e.g. `$map("key": "value")`) as they are not necessary and verbose
+  - exclude conditional at-rules for duplicated variables:
+    - add `else` & `else if` to at-rules to be excluded
+    from duplicated variables
+
+    allows:
+    ```
+    @if ($condition) {
+      $a: 1;
+    } @else if {
+      $a: 2;
+    } @else {
+      $a: 3;
+    }
+    ```
+  - allow empty Sass comments
+    - disable `scss/comment-no-empty`
+    - allows multiline comments with empty lines / breaks
+
+    example:
+    ```
+    // first part
+    //
+    // second part
+    ```
+
 ## [0.8.0] - 24.10.2020
 - chore:
   - update dependencies

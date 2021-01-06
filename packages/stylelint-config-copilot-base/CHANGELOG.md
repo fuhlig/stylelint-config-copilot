@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 06.01.2021
+- rules:
+  - add conditional at-rules (if, else, else if) to be ignored for `max-nesting-depth`
+  - allow duplicated properties for 'native' fallbacks
+    > Ignore consecutive duplicated properties with different values. Including duplicate properties (fallbacks) is useful to deal with older browsers support for CSS properties. E.g. using px units when rem isn't available.
+    [rule docs](https://stylelint.io/user-guide/rules/declaration-block-no-duplicate-properties)
+  - allow 2 universal selectors: allow selectors like `* + *` (any element that has a previous sibling)
+  
 ## [0.4.1] - 27.11.2020
 - rules: 
   - allow `ch` (remove from `unit-disallowed-list`)
