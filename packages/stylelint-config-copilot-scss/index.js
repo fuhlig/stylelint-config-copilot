@@ -239,7 +239,7 @@ module.exports = {
     \*------------------------------------ */
 
     // Disallow empty comments.
-    'scss/comment-no-empty': true,
+    'scss/comment-no-empty': null,
 
     // Disallow /*-comments.
     'scss/comment-no-loud': null,
