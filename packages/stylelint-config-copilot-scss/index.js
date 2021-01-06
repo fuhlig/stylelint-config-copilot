@@ -317,6 +317,8 @@ module.exports = {
         'ignoreInsideAtRules': [
           'mixin',
           'if',
+          'else',
+          'else if',
           'for',
           'each',
         ],
