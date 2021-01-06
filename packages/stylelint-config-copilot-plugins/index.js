@@ -47,7 +47,7 @@ module.exports = {
         // @TODO:
         // border (^border-collapse)
         '/animation/',
-        '/background/',
+        'background-color',
         '/border/',
         '/color/',
         '/columns',
@@ -84,6 +84,17 @@ module.exports = {
             'none',
             'solid',
             'transparent',
+            'contain',
+            'cover',
+            'fill',
+            'content-box',
+            // @TODO: regex for position keywords?
+            'center',
+            'top',
+            'right',
+            'left',
+            'bottom',
+            'scroll',
           ],
         },
       ],
