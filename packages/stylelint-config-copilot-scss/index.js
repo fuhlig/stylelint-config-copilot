@@ -219,7 +219,7 @@ module.exports = {
       #MAPS
     \*------------------------------------ */
     // Require quoted keys in Sass maps.
-    'scss/map-keys-quotes': 'always',
+    'scss/map-keys-quotes': null,
 
     /* ------------------------------------*\
       #DIMENSIONS
