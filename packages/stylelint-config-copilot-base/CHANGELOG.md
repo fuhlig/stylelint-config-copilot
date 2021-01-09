@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 09.01.2021
+- LICENSE: include license file from monorepo root
+
 ## [0.5.0] - 06.01.2021
 - rules:
   - add conditional at-rules (if, else, else if) to be ignored for `max-nesting-depth`
