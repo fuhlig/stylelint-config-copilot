@@ -31,7 +31,7 @@
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "danger": "10.6.0",
-    "eslint": "7.13.0",
+    "eslint": "7.17.0",
     "eslint-config-standard": "16.0.2",
     "eslint-config-stylelint": "13.1.0",
     "eslint-formatter-pretty": "4.0.0",
