@@ -47,6 +47,6 @@
     "stylelint-find-new-rules": "3.0.1",
     "stylelint-order": "4.1.0",
     "stylelint-scss": "3.18.0",
-    "yargs-parser": "20.2.3"
+    "yargs-parser": "20.2.4"
   }
 }
