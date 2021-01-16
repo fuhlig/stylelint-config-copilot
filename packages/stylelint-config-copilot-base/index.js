@@ -488,6 +488,9 @@ module.exports = {
     /* ------------------------------------*\
             #SELECTOR
     \*------------------------------------ */
+    // Specify a list of disallowed attribute names.
+    'selector-attribute-name-disallowed-list': null,
+
     // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
     'selector-attribute-brackets-space-inside': 'never',
 
@@ -809,6 +812,9 @@ module.exports = {
 
     // Require or disallow an empty line before comments (Autofixable).
     'comment-no-empty': true,
+
+    // Specify a pattern for comments.
+    'comment-pattern': null,
 
     // Require or disallow whitespace on the inside of comment markers (Autofixable).
     'comment-whitespace-inside': 'always',
