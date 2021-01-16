@@ -19,6 +19,6 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "13.7.2"
+    "stylelint": "13.8.0"
   }
 }
