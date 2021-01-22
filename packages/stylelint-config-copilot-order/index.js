@@ -133,16 +133,6 @@ module.exports = {
         ],
       },
       {
-        groupName: 'transforms',
-        order: 'flexible',
-        properties: [
-          'transform',
-          'transform-box',
-          'transform-origin',
-          'transform-style',
-        ],
-      },
-      {
         groupName: 'overflow',
         order: 'flexible',
         properties: [
@@ -180,6 +170,16 @@ module.exports = {
           'padding-right',
           'padding-top',
           'padding-bottom',
+        ],
+      },
+      {
+        groupName: 'transforms',
+        order: 'flexible',
+        properties: [
+          'transform',
+          'transform-box',
+          'transform-origin',
+          'transform-style',
         ],
       },
       {
