@@ -19,7 +19,7 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint": "13.8.0",
+    "stylelint": "13.9.0",
     "stylelint-order": "4.1.0"
   }
 }
