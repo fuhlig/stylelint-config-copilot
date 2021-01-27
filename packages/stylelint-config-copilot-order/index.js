@@ -118,6 +118,7 @@ module.exports = {
         groupName: 'float',
         properties: [
           'float',
+          'clear',
         ],
       },
       {
@@ -132,13 +133,12 @@ module.exports = {
         ],
       },
       {
-        groupName: 'transforms',
+        groupName: 'overflow',
         order: 'flexible',
         properties: [
-          'transform',
-          'transform-box',
-          'transform-origin',
-          'transform-style',
+          'overflow',
+          'overflow-x',
+          'overflow-y',
         ],
       },
       {
@@ -173,10 +173,27 @@ module.exports = {
         ],
       },
       {
+        groupName: 'transforms',
+        order: 'flexible',
+        properties: [
+          'transform',
+          'transform-box',
+          'transform-origin',
+          'transform-style',
+        ],
+      },
+      {
         groupName: 'borders',
         order: 'flexible',
         properties: [
           'border',
+          'border-width',
+          'border-style',
+          'border-color',
+          'border-left',
+          'border-right',
+          'border-top',
+          'border-bottom',
           'border-radius',
         ],
       },
@@ -201,6 +218,7 @@ module.exports = {
           'letter-spacing',
           'line-height',
           'text-align',
+          'vertical-align',
           'white-space',
           'word-break',
           'word-spacing',
@@ -264,6 +282,15 @@ module.exports = {
           'animation-name',
           'animation-play-state',
           'animation-timing-function',
+        ],
+      },
+      {
+        groupName: 'user-interaction',
+        order: 'flexible',
+        properties: [
+          'pointer-events',
+          'cursor',
+          'user-select',
         ],
       },
     ],

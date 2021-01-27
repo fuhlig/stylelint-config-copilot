@@ -1,0 +1,11 @@
+/* stylelint-disable sh-waqar/declaration-use-variable, color-named */
+
+.border {
+  border-right: 0;
+  display: block;
+  border: 1px solid red;
+  margin: 0;
+  border-radius: 1em;
+}
+
+/* stylelint-enable sh-waqar/declaration-use-variable */
