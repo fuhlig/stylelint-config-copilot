@@ -18,7 +18,7 @@
   ],
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
-  "dependencies": {
-    "stylelint": "13.9.0"
+  "peerDependencies": {
+    "stylelint": "^13.0.0"
   }
 }
