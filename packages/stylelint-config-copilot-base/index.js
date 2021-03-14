@@ -403,6 +403,9 @@ module.exports = {
       },
     ],
 
+    // Disallow duplicate custom properties within declaration blocks.
+    'declaration-block-no-duplicate-custom-properties': true,
+
     // Require a newline or disallow whitespace after the semicolons of declaration blocks.
     // There must always be a newline after the semicolon.
     'declaration-block-semicolon-newline-after': 'always',
@@ -837,5 +840,11 @@ module.exports = {
 
     // Specify a pattern for custom properties.
     'custom-property-pattern': null,
+
+    /* ------------------------------------*\
+            #GRID
+    \*------------------------------------ */
+    // Disallow invalid named grid areas.
+    'named-grid-areas-no-invalid': true,
   },
 };
