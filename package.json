@@ -21,7 +21,8 @@
     "lerna:setup": "npx lerna bootstrap --hoist",
     "test": "npm run test:find-rules && npm run lint:eslint",
     "test:find-rules": "node test/find-rules",
-    "lint:eslint": "eslint --format=pretty . --max-warnings 0"
+    "lint:eslint": "eslint --format=pretty . --max-warnings 0",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",
@@ -39,7 +40,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.3.1",
     "eslint-plugin-standard": "5.0.0",
-    "husky": "4.3.8",
+    "husky": "^7.0.0",
     "lerna": "4.0.0",
     "lodash": "4.17.21",
     "stylelint": "13.13.1",
