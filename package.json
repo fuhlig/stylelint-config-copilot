@@ -28,7 +28,7 @@
     "@babel/node": "7.13.10",
     "@babel/preset-env": "7.14.7",
     "@babel/register": "7.13.14",
-    "@commitlint/cli": "12.0.1",
+    "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.1",
     "danger": "10.6.6",
     "eslint": "7.23.0",
