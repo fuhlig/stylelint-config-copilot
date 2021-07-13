@@ -30,6 +30,9 @@ module.exports = {
     // Limit the length of a line.
     'max-line-length': null,
 
+    // Disallow irregular whitespaces.
+    'no-irregular-whitespace': null,
+
     // Limit the allowed nesting depth.
     'max-nesting-depth': [
       3,
@@ -68,6 +71,9 @@ module.exports = {
         'severity': 'error',
       },
     ],
+
+    // Disallow invalid position @import rules within a stylesheet.
+    'no-invalid-position-at-import-rule': null,
 
     // Disallow units for zero lengths.
     'length-zero-no-unit': true,
@@ -573,6 +579,9 @@ module.exports = {
         ],
       },
     ],
+
+    // Specify a list of disallowed selectors.
+    'selector-disallowed-list': null,
 
     // Disallow vendor prefixes for selectors.
     'selector-no-vendor-prefix': null,
