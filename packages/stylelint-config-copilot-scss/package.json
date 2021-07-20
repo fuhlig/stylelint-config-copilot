@@ -19,7 +19,7 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint-scss": "3.20.0"
+    "stylelint-scss": "3.20.1"
   },
   "peerDependencies": {
     "stylelint": "^13.0.0"
