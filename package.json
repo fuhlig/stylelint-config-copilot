@@ -30,7 +30,7 @@
     "@babel/preset-env": "7.15.6",
     "@babel/register": "7.14.5",
     "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/config-conventional": "13.1.0",
     "danger": "10.6.6",
     "eslint": "7.30.0",
     "eslint-config-standard": "16.0.3",
