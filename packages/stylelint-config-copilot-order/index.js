@@ -63,6 +63,15 @@ module.exports = {
         ],
       },
       {
+        groupName: 'gaps',
+        order: 'flexible',
+        properties: [
+          'gap',
+          'column-gap',
+          'row-gap',
+        ],
+      },      
+      {
         groupName: 'grid',
         order: 'flexible',
         properties: [
@@ -81,7 +90,6 @@ module.exports = {
           'grid-template-areas',
           'grid-template-columns',
           'grid-template-rows',
-          'gap',
         ],
       },
       {
@@ -147,7 +155,6 @@ module.exports = {
           'columns',
           'column-count',
           'column-fill',
-          'column-gap',
           'column-span',
           'column-width',
           'column-rule',
