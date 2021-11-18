@@ -6,7 +6,7 @@ module.exports = {
   'plugins': [
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
-    'stylelint-declaration-use-variable',
+    'stylelint-declaration-strict-value',
     'stylelint-itcss',
   ],
   'rules': {
@@ -42,7 +42,7 @@ module.exports = {
       },
     ],
 
-    'sh-waqar/declaration-use-variable': [
+    'scale-unlimited/declaration-strict-value': [
       [
         // @TODO:
         // border (^border-collapse)
@@ -63,41 +63,41 @@ module.exports = {
         'left',
         'right',
         'top',
-        {
-          ignoreValues: [
-            '/-\\(/', // -(x) calculations
-            '/.*\\$/', // include $
-            '/\\%/', // percentage %
-            '/percentage/', // sass `percentage()` function
-            '/vw/', // number with vw unit
-            '/vh/', // number with vh unit
-            'transparent',
-            'inherit',
-            'initial',
-            '0',
-            'auto',
-            '0 auto',
-            'auto 0',
-            'currentColor',
-            'inherit',
-            'initial',
-            'none',
-            'solid',
-            'transparent',
-            'contain',
-            'cover',
-            'fill',
-            'content-box',
-            // @TODO: regex for position keywords?
-            'center',
-            'top',
-            'right',
-            'left',
-            'bottom',
-            'scroll',
-          ],
-        },
       ],
+      {
+        ignoreValues: [
+          '/-\\(/', // -(x) calculations
+          '/.*\\$/', // include $
+          '/\\%/', // percentage %
+          '/percentage/', // sass `percentage()` function
+          '/vw/', // number with vw unit
+          '/vh/', // number with vh unit
+          'transparent',
+          'inherit',
+          'initial',
+          '0',
+          'auto',
+          '0 auto',
+          'auto 0',
+          'currentColor',
+          'inherit',
+          'initial',
+          'none',
+          'solid',
+          'transparent',
+          'contain',
+          'cover',
+          'fill',
+          'content-box',
+          // @TODO: regex for position keywords?
+          'center',
+          'top',
+          'right',
+          'left',
+          'bottom',
+          'scroll',
+        ],
+      },
     ],
 
   },

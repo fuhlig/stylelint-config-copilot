@@ -1,6 +1,8 @@
 node_modules/
 .idea
+.vscode/
 .history
+.DS_Store
 
 # for local testing purposes
 ./.stylelintrc.js
