@@ -15,7 +15,7 @@ The following plugins are included:
   Disallow property values that are ignored due to another property value in the same rule. E.g. `float` and `vertical-align`.
 
 
-- [stylelint-declaration-use-variable](https://github.com/sh-waqar/stylelint-declaration-use-variable) 
+- [stylelint-declaration-strict-value](https://github.com/AndyOGo/stylelint-declaration-strict-value) 
 
   Enforce usage of variables (pre-processors or CSS custom properties aka CSS variables).
 
