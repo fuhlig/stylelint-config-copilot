@@ -85,6 +85,9 @@ module.exports = {
     // Disallow hex colors.
     'color-no-hex': null,
 
+    // Require or disallow alpha channel for hex colors.
+    'color-hex-alpha': null,
+
     // Specify lowercase or uppercase for hex colors.
     'color-hex-case': 'upper',
 
@@ -668,6 +671,7 @@ module.exports = {
     /* ------------------------------------*\
             #RULE
     \*------------------------------------ */
+    // Require or disallow an empty line before rules.
     'rule-empty-line-before': [
       'always-multi-line',
       {
@@ -680,6 +684,9 @@ module.exports = {
         ],
       },
     ],
+
+    // Specify a list of disallowed properties for selectors within rules.
+    'rule-selector-property-disallowed-list': null,
 
     /* ------------------------------------*\
             #MEDIA-FEATURE
@@ -846,6 +853,9 @@ module.exports = {
 
     // Specify a pattern for custom properties.
     'custom-property-pattern': null,
+
+    // Disallow missing var function for custom properties.
+    'custom-property-no-missing-var-function': true,
 
     /* ------------------------------------*\
             #GRID
