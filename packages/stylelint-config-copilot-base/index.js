@@ -149,9 +149,6 @@ module.exports = {
     // Disallow an unspaced operator within calc functions.
     'function-calc-no-unspaced-operator': true,
 
-    // Disallow an invalid expression within calc functions.
-    'function-calc-no-invalid': true,
-
     // Require a newline or disallow whitespace after the commas of functions.
     // There must always be a newline after the commas in multi-line functions.
     'function-comma-newline-after': 'never-multi-line',

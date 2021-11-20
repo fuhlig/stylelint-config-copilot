@@ -7,9 +7,6 @@ module.exports = {
     'stylelint-scss',
   ],
   'rules': {
-    // Unset rule as it does it throws a warning when combining `calc` and interpolated Sass var.
-    'function-calc-no-invalid': null,
-
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */
