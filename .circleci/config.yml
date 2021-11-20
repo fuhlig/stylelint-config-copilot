@@ -39,6 +39,20 @@ jobs:
       - install
       - test
       - lint
+  build-node-14:
+    docker:
+      - image: circleci/node:14.18.1
+    steps:
+      - install
+      - test
+      - lint
+  build-node-12:
+    docker:
+      - image: circleci/node:12.22.7
+    steps:
+      - install
+      - test
+      - lint
   build-node-10:
     docker:
       - image: circleci/node:10.19
@@ -53,4 +67,6 @@ workflows:
     jobs:
       - build-node-latest
       - build-node-lts
+      - build-node-14
+      - build-node-12
       - build-node-10
