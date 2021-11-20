@@ -6,5 +6,8 @@ module.exports = {
     'footer-max-line-length': [
       0,
     ],
+    'body-max-line-length': [
+      0,
+    ],
   },
 };
