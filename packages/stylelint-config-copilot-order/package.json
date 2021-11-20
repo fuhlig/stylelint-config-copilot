@@ -19,9 +19,9 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint-order": "4.1.0"
+    "stylelint-order": "5.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.0.0"
   }
 }
