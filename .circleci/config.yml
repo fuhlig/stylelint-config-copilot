@@ -53,13 +53,6 @@ jobs:
       - install
       - test
       - lint
-  build-node-10:
-    docker:
-      - image: circleci/node:10.19
-    steps:
-      - install
-      - test
-      - lint
 
 workflows:
   version: 2
@@ -69,4 +62,3 @@ workflows:
       - build-node-lts
       - build-node-14
       - build-node-12
-      - build-node-10
