@@ -3,6 +3,7 @@
  * @requires stylelint-scss
  */
 module.exports = {
+  'customSyntax': require('postcss-scss'),
   'plugins': [
     'stylelint-scss',
   ],
