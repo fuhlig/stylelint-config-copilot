@@ -3,13 +3,11 @@
  * @requires stylelint-scss
  */
 module.exports = {
+  'customSyntax': require('postcss-scss'),
   'plugins': [
     'stylelint-scss',
   ],
   'rules': {
-    // Unset rule as it does it throws a warning when combining `calc` and interpolated Sass var.
-    'function-calc-no-invalid': null,
-
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */

@@ -85,6 +85,9 @@ module.exports = {
     // Disallow hex colors.
     'color-no-hex': null,
 
+    // Require or disallow alpha channel for hex colors.
+    'color-hex-alpha': null,
+
     // Specify lowercase or uppercase for hex colors.
     'color-hex-case': 'upper',
 
@@ -148,9 +151,6 @@ module.exports = {
 
     // Disallow an unspaced operator within calc functions.
     'function-calc-no-unspaced-operator': true,
-
-    // Disallow an invalid expression within calc functions.
-    'function-calc-no-invalid': true,
 
     // Require a newline or disallow whitespace after the commas of functions.
     // There must always be a newline after the commas in multi-line functions.
@@ -671,6 +671,7 @@ module.exports = {
     /* ------------------------------------*\
             #RULE
     \*------------------------------------ */
+    // Require or disallow an empty line before rules.
     'rule-empty-line-before': [
       'always-multi-line',
       {
@@ -683,6 +684,9 @@ module.exports = {
         ],
       },
     ],
+
+    // Specify a list of disallowed properties for selectors within rules.
+    'rule-selector-property-disallowed-list': null,
 
     /* ------------------------------------*\
             #MEDIA-FEATURE
@@ -849,6 +853,9 @@ module.exports = {
 
     // Specify a pattern for custom properties.
     'custom-property-pattern': null,
+
+    // Disallow missing var function for custom properties.
+    'custom-property-no-missing-var-function': true,
 
     /* ------------------------------------*\
             #GRID

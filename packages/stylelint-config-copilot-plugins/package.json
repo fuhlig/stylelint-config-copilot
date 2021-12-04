@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-copilot-plugins",
-  "version": "0.6.2",
+  "version": "0.6.3-1.0.0-rc.1.0",
   "description": "Opinionated Stylelint-Configuration for stylelint plugins",
   "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-plugins",
   "main": "index.js",
@@ -19,12 +19,12 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
-    "stylelint-declaration-use-variable": "1.7.3",
-    "stylelint-high-performance-animation": "1.5.2",
+    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
+    "stylelint-declaration-strict-value": "1.8.0",
+    "stylelint-high-performance-animation": "1.6.0",
     "stylelint-itcss": "0.4.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.0.0"
   }
 }

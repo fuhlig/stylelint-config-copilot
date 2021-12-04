@@ -354,5 +354,6 @@ b {
 /* stylelint-enable */
 
 .unit-disallowed-list {
-  width: 10ch; /* stylelint-disable-line sh-waqar/declaration-use-variable */
+  /* @TODO: adjust unit, `ch` is allowed */
+  width: 10ch; /* stylelint-disable-line scale-unlimited/declaration-strict-value */
 }
