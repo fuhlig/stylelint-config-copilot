@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc.1] - 04.12.2021
+This is the first release candidate for a stable version. 
+- breaking changes:
+  - update to Stylelint v14 (see [migration guide](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-14.md) for details)
+  - Node v10 support dropped (see [Stylelint v14 migration guide](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-14.md#users)), v12 or greater is required
+- ci:
+  - add runners for Node v16
+    - current runners: 12, 14, 16 (`lts`), 17 (`latest`)
+  
 ## [0.6.1] - 15.08.2021
 - chore:
   - update to [`stylelint 13.13.1`](https://github.com/stylelint/stylelint/blob/master/CHANGELOG.md#13131)
