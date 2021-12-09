@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "postcss-scss": "4.0.2",
-    "stylelint-scss": "4.0.0"
+    "stylelint-scss": "4.0.1"
   },
   "peerDependencies": {
     "stylelint": "^14.0.0"
