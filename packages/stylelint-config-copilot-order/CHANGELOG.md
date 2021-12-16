@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc.2] - 16.12.2021
+- fix tagged version `0.6.2-1.0.0-rc.1.0` => `1.0.0-rc.x`
+
 ## [1.0.0-rc.1] - 04.12.2021
 This is the first release candidate for a stable version. 
 - breaking changes:
