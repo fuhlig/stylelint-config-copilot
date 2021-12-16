@@ -46,9 +46,7 @@ module.exports = {
       [
         // @TODO:
         // border (^border-collapse)
-        '/animation/',
         'background-color',
-        '/border/',
         '/color/',
         '/columns',
         '/flex-basis/',
@@ -59,10 +57,15 @@ module.exports = {
         '/padding/',
         '/shadow/',
         '/width/',
+        'border-color',
+        'border-top-color',
+        'border-bottom-color',
+        'border-left-color',
+        'border-right-color',
+        'top',
         'bottom',
         'left',
         'right',
-        'top',
       ],
       {
         ignoreValues: [
@@ -96,6 +99,7 @@ module.exports = {
           'left',
           'bottom',
           'scroll',
+          'inset',
         ],
       },
     ],
