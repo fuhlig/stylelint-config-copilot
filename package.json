@@ -13,7 +13,7 @@
     "code-quality"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "preinstall": "npx lerna clean -y",
