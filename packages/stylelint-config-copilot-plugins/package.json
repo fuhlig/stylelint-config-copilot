@@ -2,7 +2,7 @@
   "name": "stylelint-config-copilot-plugins",
   "version": "1.0.0-rc.2",
   "description": "Opinionated Stylelint-Configuration for stylelint plugins",
-  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-plugins",
+  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/main/packages/stylelint-config-copilot-plugins",
   "main": "index.js",
   "engines": {
     "node": ">=12"

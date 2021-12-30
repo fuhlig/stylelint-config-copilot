@@ -2,7 +2,7 @@
   "name": "stylelint-config-copilot-base",
   "version": "1.0.0-rc.2",
   "description": "Opinionated Stylelint-Configuration",
-  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-base",
+  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/main/packages/stylelint-config-copilot-base",
   "main": "index.js",
   "engines": {
     "node": ">=12"

@@ -1,4 +1,4 @@
-# stylelint-config-copilot [![CircleCI](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master.svg?style=svg)](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/master)  [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+# stylelint-config-copilot [![CircleCI](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/main.svg?style=svg)](https://circleci.com/gh/fuhlig/stylelint-config-copilot/tree/main)  [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 
 
@@ -16,7 +16,7 @@ The configs are separated into dedicated packages:
 - [base](/packages/stylelint-config-copilot-base): stylelint's built-in rules
 - [scss](/packages/stylelint-config-copilot-scss): Sass (scss syntax) specific rules
 - [plugins](/packages/stylelint-config-copilot-plugins): rules from various stylelint plugins
-- [order](https://github.com/fuhlig/stylelint-config-copilot/tree/master/packages/stylelint-config-copilot-order) - order specific rules
+- [order](https://github.com/fuhlig/stylelint-config-copilot/tree/main/packages/stylelint-config-copilot-order) - order specific rules
 
 Usage information are in the packages' documentations.
 
