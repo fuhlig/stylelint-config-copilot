@@ -127,6 +127,9 @@ module.exports = {
     // Disallow parentheses in conditional @ rules (if, elsif, while).
     'scss/at-rule-conditional-no-parentheses': null,
 
+    // Disallow usage of @use without a namespace.
+    'scss/at-use-no-unnamespaced': null,
+
     /* ------------------------------------*\
       #FUNCTIONS
     \*------------------------------------ */
@@ -212,6 +215,9 @@ module.exports = {
 
     // Specify a pattern for Sass-like variables.
     'scss/dollar-variable-pattern': null,
+
+    // Disallow assignment to namespaced variables.
+    'scss/dollar-variable-no-namespaced-assignment': null,
 
     /* ------------------------------------*\
       #MAPS
