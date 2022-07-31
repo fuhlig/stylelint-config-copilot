@@ -38,12 +38,6 @@ jobs:
     steps:
       - install
       - test
-  build-node-12:
-    docker:
-      - image: circleci/node:12.22.7
-    steps:
-      - install
-      - test
 
 workflows:
   version: 2
@@ -52,4 +46,3 @@ workflows:
       - build-node-latest
       - build-node-lts
       - build-node-14
-      - build-node-12
