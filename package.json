@@ -29,7 +29,7 @@
     "@babel/node": "7.18.9",
     "@babel/preset-env": "7.18.9",
     "@babel/register": "7.18.9",
-    "@commitlint/cli": "17.0.3",
+    "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.0.3",
     "eslint": "8.20.0",
     "eslint-config-standard": "17.0.0",
