@@ -31,7 +31,7 @@
     "@babel/register": "7.18.9",
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.0.3",
-    "eslint": "8.20.0",
+    "eslint": "8.30.0",
     "eslint-config-standard": "17.0.0",
     "eslint-config-stylelint": "15.1.0",
     "eslint-formatter-pretty": "4.1.0",
