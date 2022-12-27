@@ -19,8 +19,8 @@
   "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "postcss-scss": "4.0.4",
-    "stylelint-scss": "4.1.0"
+    "postcss-scss": "4.0.6",
+    "stylelint-scss": "4.3.0"
   },
   "peerDependencies": {
     "stylelint": "^14.0.0"
