@@ -20,21 +20,21 @@ commands:
           command: npm test
 
 jobs:
-  build-node-latest:
+  build-node-current:
     docker:
-      - image: circleci/node:latest
+      - image: cimg/node:current
     steps:
       - install
       - test
   build-node-lts:
     docker:
-      - image: circleci/node:lts
+      - image: cimg/node:lts
     steps:
       - install
       - test
-  build-node-14:
+  build-node-16:
     docker:
-      - image: circleci/node:14.18.1
+      - image: cimg/node:16.18.1
     steps:
       - install
       - test
@@ -43,6 +43,6 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build-node-latest
+      - build-node-current
       - build-node-lts
-      - build-node-14
+      - build-node-16
