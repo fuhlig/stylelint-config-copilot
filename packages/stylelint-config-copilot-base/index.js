@@ -126,6 +126,17 @@ module.exports = {
     'hue-degree-notation': null,
 
     /* ------------------------------------*\
+            #ANNOTATION
+    \*------------------------------------ */
+    'annotation-no-unknown': true,
+
+    /* ------------------------------------*\
+            #IMPORT
+    \*------------------------------------ */
+    // Specify string or URL notation for @import rules.
+    'import-notation': 'string',
+
+    /* ------------------------------------*\
             #FONT-FAMILY
     \*------------------------------------ */
     // Specify whether or not quotation marks should be used around font family names.
@@ -212,8 +223,14 @@ module.exports = {
       '/^http/',
       'ftp',
     ],
+    // Specify a list of allowed URL schemes.
     'function-url-scheme-allowed-list': null,
+
+    // Specify a list of allowed functions.
     'function-allowed-list': null,
+
+    // Disallow unknown functions.
+    'function-no-unknown': null,
 
     /* ------------------------------------*\
             #NUMBER
@@ -385,7 +402,11 @@ module.exports = {
         ],
       },
     ],
+    // Specify a list of allowed property and value pairs within declarations.
     'declaration-property-value-allowed-list': null,
+
+    // Limit the number of values for a list of properties within declarations.
+    'declaration-property-max-values': null,
 
     /* ------------------------------------*\
             #DECLARATION-BLOCK
@@ -472,15 +493,7 @@ module.exports = {
 
     // Require a newline after the opening brace of blocks.
     // There must always be a newline after the opening brace.
-    'block-opening-brace-newline-after': [
-      'always',
-      {
-        'ignoreAtRules': [
-          'if',
-          'else',
-        ],
-      },
-    ],
+    'block-opening-brace-newline-after': null,
 
     // Require a newline or disallow whitespace before the opening brace of blocks.
     // (this rule is totally bugged out and does not work properly)
@@ -649,6 +662,9 @@ module.exports = {
     // Specify a allowed-list of allowed pseudo-element selectors.
     'selector-pseudo-element-allowed-list': null,
 
+    // Specify simple or complex notation for :not() pseudo-class selectors.
+    'selector-not-notation': null,
+
     /* ------------------------------------*\
             #SELECTOR-LIST
     \*------------------------------------ */
@@ -725,6 +741,9 @@ module.exports = {
 
     // Require a single space or disallow whitespace before the range operator in media features (Autofixable).
     'media-feature-range-operator-space-before': 'always',
+
+    // Specify context or prefix notation for media feature ranges.
+    'media-feature-range-notation': null,
 
     /* ------------------------------------*\
             #MEDIA-QUERY-LIST
@@ -816,6 +835,12 @@ module.exports = {
 
     // Specify a pattern for keyframe names.
     'keyframes-name-pattern': null,
+
+    // Disallow duplicate selectors within keyframe blocks.
+    'keyframe-block-no-duplicate-selectors': true,
+
+    // Specify keyword or percentage notation for keyframe selectors.
+    'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block',
 
     // Specify the minimum number of milliseconds for time values.
     'time-min-milliseconds': null,
