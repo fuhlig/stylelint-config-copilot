@@ -40,7 +40,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-standard": "5.0.0",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lerna": "5.3.0",
     "lodash": "4.17.21",
     "stylelint": "14.16.0",
