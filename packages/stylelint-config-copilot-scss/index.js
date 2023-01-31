@@ -8,6 +8,9 @@ module.exports = {
     'stylelint-scss',
   ],
   'rules': {
+    // Adjust default rules
+    'function-no-unknown': null,
+
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */
@@ -133,6 +136,8 @@ module.exports = {
     /* ------------------------------------*\
       #FUNCTIONS
     \*------------------------------------ */
+    // This rule is basically a wrapper around the mentioned core rule. You must disable Stylelint's core rule to make this rule work
+    'scss/function-no-unknown': true,
 
     // Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
     'scss/no-global-function-names': null,
