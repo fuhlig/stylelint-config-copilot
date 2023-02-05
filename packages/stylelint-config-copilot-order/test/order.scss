@@ -113,3 +113,17 @@
   margin: 0;
   cursor: pointer;
 }
+
+.gap-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.gap-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
