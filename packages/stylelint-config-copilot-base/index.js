@@ -76,7 +76,7 @@ module.exports = {
     'no-invalid-position-at-import-rule': null,
 
     // Disallow units for zero lengths.
-    'length-zero-no-unit': true,
+    'length-zero-no-unit': null,
 
     /* ------------------------------------*\
             #COLOR
