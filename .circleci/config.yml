@@ -32,12 +32,6 @@ jobs:
     steps:
       - install
       - test
-  build-node-16:
-    docker:
-      - image: cimg/node:16.18.1
-    steps:
-      - install
-      - test
 
 workflows:
   version: 2
@@ -45,4 +39,3 @@ workflows:
     jobs:
       - build-node-current
       - build-node-lts
-      - build-node-16
