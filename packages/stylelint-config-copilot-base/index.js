@@ -96,6 +96,9 @@ module.exports = {
     // Specify number or angle notation for degree hues
     'hue-degree-notation': null,
 
+    // Specify number or percentage notation for lightness.
+    'lightness-notation': null,
+
     /* ------------------------------------*\
             #ANNOTATION
     \*------------------------------------ */
@@ -276,6 +279,9 @@ module.exports = {
         ],
       },
     ],
+
+    'declaration-property-value-no-unknown': true,
+
     // Specify a list of allowed property and value pairs within declarations.
     'declaration-property-value-allowed-list': null,
 
@@ -447,6 +453,9 @@ module.exports = {
     // Specify simple or complex notation for :not() pseudo-class selectors.
     'selector-not-notation': null,
 
+    // Disallow unmatchable An+B selectors.
+    'selector-anb-no-unmatchable': true,
+
     /* ------------------------------------*\
             #RULE
     \*------------------------------------ */
@@ -487,6 +496,15 @@ module.exports = {
 
     // Specify context or prefix notation for media feature ranges.
     'media-feature-range-notation': null,
+
+    // Specify a list of allowed name and unit pairs within media features.
+    'media-feature-name-unit-allowed-list': null,
+
+    // Disallow unknown values for media features.
+    'media-feature-name-value-no-unknown': true,
+
+    // Disallow invalid media queries.
+    'media-query-no-invalid': true,
 
     /* ------------------------------------*\
             #AT-RULE
@@ -590,6 +608,12 @@ module.exports = {
 
     // Disallow missing var function for custom properties.
     'custom-property-no-missing-var-function': true,
+
+    // Disallow unknown custom properties.
+    // @TODO:
+    // evaluate 'This rule considers custom properties defined within the same source to be known.'
+    // https://stylelint.io/user-guide/rules/no-unknown-custom-properties/
+    'no-unknown-custom-properties': null,
 
     /* ------------------------------------*\
             #GRID

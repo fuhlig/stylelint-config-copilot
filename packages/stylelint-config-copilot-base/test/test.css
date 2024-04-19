@@ -350,6 +350,44 @@ b {
   color: #f00;
 }
 
+/* declaration-property-value-no-unknown */
+/* stylelint-disable-next-line color-named, scale-unlimited/declaration-strict-value */
+a { top: red; }
+
+/* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
+a { top: unknown; }
+
+/* selector-anb-no-unmatchable */
+a:nth-child(0) {
+  top: 0;
+}
+
+a:nth-last-child(0n) {
+  top: 0;
+}
+
+a:nth-of-type(0n+0) {
+  top: 0;
+}
+
+a:nth-last-of-type(0 of a) {
+  top: 0;
+}
+
+/* media-query-no-invalid */
+@media not(min-width: 300px) {}
+
+@media (width == 100px) {}
+
+/* stylelint-disable-next-line block-no-empty */
+@media (color) and (hover) or (width) {}
+
+/* media-feature-name-value-no-unknown */
+@media (color: red) {}
+
+@media (width: 10) {}
+
+@media (width: auto) {}
 
 /* stylelint-enable */
 
