@@ -78,15 +78,15 @@ module.exports = {
     \*------------------------------------ */
 
     // Disallow leading underscore in partial names in @import.
-    'scss/at-import-no-partial-leading-underscore': null,
+    'scss/load-no-partial-leading-underscore': null,
 
     // Specify disallowed-list of disallowed file extensions for partial names in @import commands.
-    'scss/at-import-partial-extension-blacklist': [
+    'scss/at-import-partial-extension-disallowed-list': [
       'scss',
     ],
 
-    // Specify whitelist of allowed file extensions for partial names in @import commands.
-    'scss/at-import-partial-extension-whitelist': null,
+    // Specify list of allowed file extensions for partial names in @import commands.
+    'scss/at-import-partial-extension-allowed-list': null,
 
     // Require or disallow extension in @import commands.
     'scss/at-import-partial-extension': null,
