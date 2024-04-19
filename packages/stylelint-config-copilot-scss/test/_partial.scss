@@ -1,0 +1,41 @@
+@function _addNums($n1, $n2) {
+  @return calc($n1 + $n2);
+}
+
+@function _plusOne($n1) {
+  @return $n1 + 1;
+}
+
+.sidebar {
+  margin-left: _addNums(4, 6); // _plusOne() is not used.
+}
+@mixin _no-margin {
+  margin: 0;
+}
+
+@mixin blue-color {
+  color: blue;
+}
+
+nav ul {
+  @include blue-color; // _no-margin is not used.
+}
+
+$radius: 3px;
+$-margin: 3px;
+
+.rounded {
+  border-radius: $radius; // $-margin is not used.
+}
+%-toolbelt:hover {
+  color: red;
+}
+
+.a.%b {
+  margin: 1px;
+}
+
+.action-buttons {
+  @extend %b; // %-toolbelt is not used.
+  color: blue;
+}

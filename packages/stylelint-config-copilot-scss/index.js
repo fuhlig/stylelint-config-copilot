@@ -14,6 +14,8 @@ module.exports = {
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */
+    // Disallow nesting a single block if it could be merged with its parent block.
+    'scss/block-no-redundant-nesting': null,
 
     /* ------------------------------------*\
       #AT-IF
@@ -133,14 +135,26 @@ module.exports = {
     // Disallow usage of @use without a namespace.
     'scss/at-use-no-unnamespaced': null,
 
+    // Disallow redundant namespace aliases.
+    'scss/at-use-no-redundant-alias': true,
+
+    // Disallow redundant @at-root rule.
+    'scss/at-root-no-redundant': true,
+
     /* ------------------------------------*\
       #FUNCTIONS
     \*------------------------------------ */
     // This rule is basically a wrapper around the mentioned core rule. You must disable Stylelint's core rule to make this rule work
     'scss/function-no-unknown': true,
 
+    // Specify a list of disallowed functions.
+    'scss/function-disallowed-list': null,
+
     // Disallows the use of global function names, as these global functions are now located inside built-in Sass modules.
     'scss/no-global-function-names': null,
+
+    // Disallow unused private members.
+    'scss/no-unused-private-members': true,
 
     // Encourage the use of the scale-color over sass color-functions (darken, lighten, etc.).
     'scss/function-color-relative': null,
@@ -150,6 +164,9 @@ module.exports = {
 
     // Disallow unquoted strings inside the unquote function.
     'scss/function-unquote-no-unquoted-strings-inside': null,
+
+    // Disallow interpolation in calc(), clamp(), min(), and max() functions.
+    'scss/function-calculation-no-interpolation': true,
 
     // Require for variables to be put first in a block (a rule or in root)
     'scss/dollar-variable-first-in-block': [
@@ -315,6 +332,10 @@ module.exports = {
     /* ------------------------------------*\
       #GENERAL
     \*------------------------------------ */
+
+    // Disallow unknown properties. Should be used instead of Stylelint's property-no-unknown.
+    'property-no-unknown': null,
+    'scss/property-no-unknown': true,
 
     // Disallow dollar variables within a stylesheet.
     'scss/no-dollar-variables': null,
