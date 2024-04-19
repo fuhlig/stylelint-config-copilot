@@ -7,7 +7,7 @@ module.exports = {
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
     'stylelint-declaration-strict-value',
-    'stylelint-itcss',
+    // 'stylelint-itcss',
   ],
   'rules': {
     'plugin/declaration-block-no-ignored-properties': true,
@@ -21,26 +21,26 @@ module.exports = {
     ],
 
     // ITCSS specific rules
-    'itcss/no-variable-declaration': null,
-    'itcss/no-mixin-declaration': [
-      true,
-      {
-        ignoreLayers: [
-          'tools',
-        ],
-      },
-    ],
+    // 'itcss/no-variable-declaration': null,
+    // 'itcss/no-mixin-declaration': [
+    //   true,
+    //   {
+    //     ignoreLayers: [
+    //       'tools',
+    //     ],
+    //   },
+    // ],
 
     // disable default no-important rule, overwrite with itcss-specific
     'declaration-no-important': null,
-    'itcss/no-at-important': [
-      true,
-      {
-        ignoreLayers: [
-          'utilities',
-        ],
-      },
-    ],
+    // 'itcss/no-at-important': [
+    //   true,
+    //   {
+    //     ignoreLayers: [
+    //       'utilities',
+    //     ],
+    //   },
+    // ],
 
     'scale-unlimited/declaration-strict-value': [
       [
