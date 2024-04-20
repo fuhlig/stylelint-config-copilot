@@ -395,3 +395,8 @@ a:nth-last-of-type(0 of a) {
   /* @TODO: adjust unit, `ch` is allowed */
   width: 10ch; /* stylelint-disable-line scale-unlimited/declaration-strict-value */
 }
+
+/* annotation-no-unknown */
+a {
+  color: green !imprtant;
+}

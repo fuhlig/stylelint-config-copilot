@@ -102,6 +102,7 @@ module.exports = {
     /* ------------------------------------*\
             #ANNOTATION
     \*------------------------------------ */
+    // Disallow unknown annotations.
     'annotation-no-unknown': true,
 
     /* ------------------------------------*\
