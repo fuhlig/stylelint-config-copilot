@@ -11,6 +11,18 @@ module.exports = {
     // Adjust default rules
     'function-no-unknown': null,
 
+    // Disallow unknown annotations.
+    'annotation-no-unknown': [
+      true,
+      {
+        'ignoreAnnotations': [
+          'default',
+          'global',
+          'optional',
+        ],
+      },
+    ],
+
     /* ------------------------------------*\
       #SCSS-RULES
     \*------------------------------------ */
