@@ -281,7 +281,8 @@ module.exports = {
       },
     ],
 
-    'declaration-property-value-no-unknown': true,
+    // Disallow unknown values for properties within declarations.
+    'declaration-property-value-no-unknown': null,
 
     // Specify a list of allowed property and value pairs within declarations.
     'declaration-property-value-allowed-list': null,
