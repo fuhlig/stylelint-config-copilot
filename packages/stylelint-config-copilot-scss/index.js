@@ -11,9 +11,6 @@ module.exports = {
     // Adjust default rules
     'function-no-unknown': null,
 
-    // Disallow unknown values for properties within declarations.
-    'declaration-property-value-no-unknown': true,
-
     // Disallow unknown annotations.
     'annotation-no-unknown': [
       true,
