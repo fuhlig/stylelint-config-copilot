@@ -11,6 +11,9 @@ module.exports = {
     // Adjust default rules
     'function-no-unknown': null,
 
+    // Disallow unknown values for properties within declarations.
+    'declaration-property-value-no-unknown': true,
+
     // Disallow unknown annotations.
     'annotation-no-unknown': [
       true,
@@ -135,7 +138,16 @@ module.exports = {
 
     // Disallow unknown at-rules. Should be used instead of stylelint's at-rule-no-unknown.
     'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
+
+    // Allow container queries
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'container',
+        ],
+      },
+    ],
 
     'at-rule-disallowed-list': [
       'debug',
@@ -157,7 +169,7 @@ module.exports = {
       #FUNCTIONS
     \*------------------------------------ */
     // This rule is basically a wrapper around the mentioned core rule. You must disable Stylelint's core rule to make this rule work
-    'scss/function-no-unknown': true,
+    'scss/function-no-unknown': null,
 
     // Specify a list of disallowed functions.
     'scss/function-disallowed-list': null,
@@ -166,7 +178,7 @@ module.exports = {
     'scss/no-global-function-names': null,
 
     // Disallow unused private members.
-    'scss/no-unused-private-members': true,
+    'scss/no-unused-private-members': null,
 
     // Encourage the use of the scale-color over sass color-functions (darken, lighten, etc.).
     'scss/function-color-relative': null,
@@ -178,7 +190,7 @@ module.exports = {
     'scss/function-unquote-no-unquoted-strings-inside': null,
 
     // Disallow interpolation in calc(), clamp(), min(), and max() functions.
-    'scss/function-calculation-no-interpolation': true,
+    'scss/function-calculation-no-interpolation': null,
 
     // Require for variables to be put first in a block (a rule or in root)
     'scss/dollar-variable-first-in-block': [
