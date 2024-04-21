@@ -1,0 +1,27 @@
+{
+  "name": "stylelint-config-copilot-stylistic",
+  "version": "1.0.0-rc.3",
+  "description": "Opinionated Stylelint-Configuration for stylistic rules that were part of stylelint prior to v15",
+  "repository": "https://github.com/fuhlig/stylelint-config-copilot/tree/main/packages/stylelint-config-copilot-stylistic",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stylelint",
+    "linter",
+    "code-analysis",
+    "code-quality"
+  ],
+  "author": "Florian Uhlig <fuhlig@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "2.1.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.0.0"
+  }
+}
