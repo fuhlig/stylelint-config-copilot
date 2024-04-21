@@ -22,6 +22,7 @@ module.exports = {
           'default',
           'global',
           'optional',
+          '/^=/',
         ],
       },
     ],
