@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc.4] - 22.04.204
+- chore:
+  - upgrade to Stylelint 16 (see [migration guide](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-16.md))
+  - upgrade to [stylelint-scss 6.x](https://github.com/stylelint-scss/stylelint-scss/releases)
+- rules:
+  - `annotation-no-unknown`: overwrite base rule to add Sass flags (default, global, optional)
+  - rename `whitelist` and `blacklist` to `allowedlist` and `disallowed-list` ([inclusive language @ stylelint-scss](https://github.com/stylelint-scss/stylelint-scss/pull/958))
+  - `scss/at-rule-no-unknown`: add support for container queries by not throwing warning for unknown at-rule
+  - add `'scss/at-use-no-redundant-alias', 'scss/at-root-no-redundant', 'scss/property-no-unknown'
+
 ## [1.0.0-rc.3] - 31.01.2023
 - update deps
 

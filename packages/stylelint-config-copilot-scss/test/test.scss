@@ -109,3 +109,45 @@ a {
 $map-keys-quoted: (
   "key": value,
 ) !default;
+
+// at-root-no-redundant
+/* stylelint-disable scale-unlimited/declaration-strict-value */
+@at-root .a { margin: 3px; }
+
+.a { @at-root .b & { margin: 3px; } }
+
+@keyframes slidein {
+  @at-root from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+/* stylelint-enable scale-unlimited/declaration-strict-value */
+
+// at-use-no-redundant-alias
+@use "partial" as partial;
+
+// function-calculation-no-interpolation
+$c: 1 !default;
+
+.a { .b: calc(#{$c + 1}); }
+.a { .b: calc(max(#{$c})); }
+.a { .b: min(#{$c}); }
+.a { .b: clamp(#{$c} + 2px); }
+
+// property-no-unknown
+.unknown {
+  my-property: 1;
+}
+
+.property {
+  font: {
+    stuff: bold;
+  }
+}
+
+// annotation-no-unknown
+$foo: 10px !default;

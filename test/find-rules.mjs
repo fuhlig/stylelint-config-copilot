@@ -6,8 +6,8 @@
  * - invalid
  */
 
-const stylelintRules = require('stylelint-find-new-rules');
-const fs = require('fs');
+import stylelintRules from 'stylelint-find-new-rules';
+import { writeFileSync } from 'fs';
 
 const paths = {
   input: './.stylelintrc.js',
@@ -26,7 +26,7 @@ function print(rules) {
 function save(rules) {
   console.log(`Log file saved to ${paths.output}`);
 
-  fs.writeFileSync(paths.output, JSON.stringify({
+  writeFileSync(paths.output, JSON.stringify({
     unused: rules.unused,
     deprecated: rules.deprecated,
     invalid: rules.invalid,

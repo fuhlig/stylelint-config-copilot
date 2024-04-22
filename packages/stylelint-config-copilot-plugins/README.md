@@ -24,10 +24,6 @@ The following plugins are included:
 
   Warn about properties with low-performance animation (e.g. paint). Read more about [animations and performance](https://developers.google.com/web/fundamentals/design-and-ux/animations/animations-and-performance).
 
-- [stylelint-itcss](https://github.com/KamiKillertO/stylelint-itcss)
-  
-  Enforce [ITCSS](https://github.com/KamiKillertO/stylelint-itcss)-Architecture specific rules.
-
 ## Usage
 
 Add this to your [Stylelint config](https://stylelint.io/user-guide/configuration/):

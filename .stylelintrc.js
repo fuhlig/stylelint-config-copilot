@@ -8,6 +8,7 @@ module.exports = {
     './packages/stylelint-config-copilot-scss',
     './packages/stylelint-config-copilot-plugins',
     './packages/stylelint-config-copilot-order',
+    './packages/stylelint-config-copilot-stylistic',
   ],
   ignoreFiles: [
     // enter files to ignore (e.g. libs, styleguide styles)

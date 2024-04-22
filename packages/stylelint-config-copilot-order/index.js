@@ -63,15 +63,6 @@ module.exports = {
         ],
       },
       {
-        groupName: 'gaps',
-        order: 'flexible',
-        properties: [
-          'gap',
-          'column-gap',
-          'row-gap',
-        ],
-      },
-      {
         groupName: 'grid',
         order: 'flexible',
         properties: [
@@ -120,6 +111,15 @@ module.exports = {
           'order',
           'align-self',
           'justify-self',
+        ],
+      },
+      {
+        groupName: 'gaps',
+        order: 'flexible',
+        properties: [
+          'gap',
+          'column-gap',
+          'row-gap',
         ],
       },
       {

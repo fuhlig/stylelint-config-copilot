@@ -8,15 +8,16 @@
 
 _This project is very much work-in-progress. Right now it's about testing out different rules, combinations and plugins_
 
-Collection of shareable configurations for [stylelint](https://stylelint.io/) and [stylelint plugins](https://stylelint.io/user-guide/plugins).
+Collection of shareable configurations for [Stylelint](https://stylelint.io/) and [Stylelint plugins](https://stylelint.io/user-guide/plugins).
 
 
 
 The configs are separated into dedicated packages:
-- [base](/packages/stylelint-config-copilot-base): stylelint's built-in rules
+- [base](/packages/stylelint-config-copilot-base): Stylelint's built-in rules
 - [scss](/packages/stylelint-config-copilot-scss): Sass (scss syntax) specific rules
-- [plugins](/packages/stylelint-config-copilot-plugins): rules from various stylelint plugins
-- [order](https://github.com/fuhlig/stylelint-config-copilot/tree/main/packages/stylelint-config-copilot-order) - order specific rules
+- [plugins](/packages/stylelint-config-copilot-plugins): rules from various Stylelint plugins
+- [order](/packages/stylelint-config-copilot-order) - order specific rules
+- [stylistic](/packages/stylelint-config-copilot-stylistic) - stylistic rules in plugin form (previously built-in Stylelint rules)
 
 Usage information are in the packages' documentations.
 
@@ -69,7 +70,7 @@ npm install
 ```
 
 #### Test
-Test will run `ESLint` and find potentially unused stylelint rules in the base config
+Test will run `ESLint` and find potentially unused Stylelint rules in the base config
 
 ```bash
 npm test

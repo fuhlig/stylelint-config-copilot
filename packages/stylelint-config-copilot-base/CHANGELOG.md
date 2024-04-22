@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc.4] - 22.04.204
+- breaking changes:
+  - remove stylistic rules ([Stylelint changelog](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-16.md#removed-deprecated-stylistic-rules)) 👉 see `stylelint-config-copilot-stylistic`
+- chore:
+  - upgrade to Stylelint 16 (see [migration guide](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-16.md))
+- rules:
+  - add 'selector-anb-no-unmatchable', 'media-feature-name-value-no-unknown', 'media-query-no-invalid'
+
 ## [1.0.0-rc.3] - 31.01.2023
 - update deps
 
