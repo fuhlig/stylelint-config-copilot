@@ -32,7 +32,7 @@
     "@commitlint/cli": "17.4.2",
     "@commitlint/config-conventional": "17.4.2",
     "eslint": "8.33.0",
-    "eslint-config-standard": "17.0.0",
+    "eslint-config-standard": "17.1.0",
     "eslint-config-stylelint": "21.0.0",
     "eslint-formatter-pretty": "4.1.0",
     "eslint-plugin-import": "2.27.5",
