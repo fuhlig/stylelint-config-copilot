@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
-    "stylelint-declaration-strict-value": "1.10.4",
+    "stylelint-declaration-strict-value": "1.10.6",
     "stylelint-high-performance-animation": "1.10.0"
   },
   "peerDependencies": {
