@@ -103,8 +103,8 @@ module.exports = {
     // Specify list of allowed file extensions for partial names in @import commands.
     'scss/at-import-partial-extension-allowed-list': null,
 
-    // Require or disallow extension in @import commands.
-    'scss/at-import-partial-extension': null,
+    // Require or disallow extension in @import, @use, @forward, and [meta.load-css] commands.
+    'scss/load-partial-extension': null,
 
     /* ------------------------------------*\
       #AT-MIXINS
@@ -129,6 +129,9 @@ module.exports = {
 
     // Specify a pattern for Sass/SCSS-like mixin names.
     'scss/at-mixin-pattern': null,
+
+    // Disallow risky nesting selectors within a mixin.
+    'scss/at-mixin-no-risky-nesting-selector': null,
 
     /* ------------------------------------*\
       #AT-RULE
@@ -310,6 +313,9 @@ module.exports = {
 
     // Disallow nested properties of the same "namespace" be divided into multiple groups.
     'scss/declaration-nested-properties-no-divided-groups': true,
+
+    // Disallow unknown values for properties within declarations.
+    'scss/declaration-property-value-no-unknown': true,
 
     /* ------------------------------------*\
       #MEDIA-FEATURE

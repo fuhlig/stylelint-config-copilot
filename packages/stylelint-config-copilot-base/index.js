@@ -602,6 +602,9 @@ module.exports = {
     // Specify a pattern for custom media query names.
     'custom-media-pattern': null,
 
+    // Disallow unknown custom media queries.
+    'no-unknown-custom-media': null,
+
     // Require or disallow an empty line before custom properties (Autofixable).
     'custom-property-empty-line-before': null,
 
