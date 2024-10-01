@@ -315,7 +315,7 @@ module.exports = {
     'scss/declaration-nested-properties-no-divided-groups': true,
 
     // Disallow unknown values for properties within declarations.
-    'scss/declaration-property-value-no-unknown': true,
+    'scss/declaration-property-value-no-unknown': null,
 
     /* ------------------------------------*\
       #MEDIA-FEATURE
